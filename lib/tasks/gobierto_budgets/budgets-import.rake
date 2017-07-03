@@ -1,6 +1,6 @@
 namespace :gobierto_budgets do
   namespace :budgets do
-    BUDGETS_INDEXES = [GobiertoBudgets::SearchEngineConfiguration::BudgetLine.index_forecast, GobiertoBudgets::SearchEngineConfiguration::BudgetLine.index_executed, GobiertoBudgets::SearchEngineConfiguration::BudgetLine.index_executed_series]
+    BUDGETS_INDEXES = [GobiertoBudgets::SearchEngineConfiguration::BudgetLine.index_forecast, GobiertoBudgets::SearchEngineConfiguration::BudgetLine.index_executed]
     BUDGETS_TYPES = ['economic', 'functional', 'custom']
 
     def create_budgets_mapping(index, type)
@@ -29,32 +29,6 @@ namespace :gobierto_budgets do
             province_id:           { type: 'integer', index: 'not_analyzed' },
             autonomy_id:           { type: 'integer', index: 'not_analyzed' },
             amount_per_inhabitant: { type: 'double', index: 'not_analyzed'  }
-          }
-        }
-      }
-    end
-
-    def create_budgets_execution_series_mapping(index, type)
-      m = GobiertoBudgets::SearchEngine.client.indices.get_mapping index: index, type: type
-      return unless m.empty?
-
-      # BUDGETS_INDEX: gobierto-budgets-execution-series
-      # BUDGETS_TYPE: economic // functional // custom
-      #
-      # Document identifier: <ine_code>/<code>/<kind>
-      # Example: 28079/101/I
-      GobiertoBudgets::SearchEngine.client.indices.put_mapping index: index, type: type, body: {
-        type.to_sym => {
-          properties: {
-            ine_code:       { type: 'integer', index: 'not_analyzed' },
-            kind:           { type: 'string',  index: 'not_analyzed' },  # income I / expense G
-            code:           { type: 'string',  index: 'not_analyzed' },
-            values: {
-              properties: {
-                date:       { type: 'string',  index: 'not_analyzed' },
-                amount:     { type: 'double',  index: 'not_analyzed' }
-              }
-            }
           }
         }
       }
@@ -260,11 +234,7 @@ SQL
 
         BUDGETS_TYPES.each do |type|
           puts "- Creating #{index} #{type}"
-          if index == GobiertoBudgets::SearchEngineConfiguration::BudgetLine.index_executed_series
-            create_budgets_execution_series_mapping(index, type)
-          else
-            create_budgets_mapping(index, type)
-          end
+          create_budgets_mapping(index, type)
         end
       end
     end
