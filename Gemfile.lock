@@ -181,12 +181,12 @@ GEM
       rspec (~> 2.0)
     erubi (1.13.1)
     execjs (2.9.1)
-    faraday (2.12.0)
-      faraday-net_http (>= 2.0, < 3.4)
+    faraday (2.14.1)
+      faraday-net_http (>= 2.0, < 3.5)
       json
       logger
-    faraday-net_http (3.3.0)
-      net-http
+    faraday-net_http (3.4.2)
+      net-http (~> 0.5)
     ffi (1.16.3)
     flight-for-rails (1.5.1)
       jquery-rails (>= 2.1.4)
@@ -272,8 +272,8 @@ GEM
     multi_json (1.15.0)
     multipart-post (2.0.0)
     mutex_m (0.3.0)
-    net-http (0.4.1)
-      uri
+    net-http (0.9.1)
+      uri (>= 0.11.1)
     net-imap (0.4.20)
       date
       net-protocol
@@ -447,7 +447,7 @@ GEM
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (2.5.0)
-    uri (0.13.3)
+    uri (1.1.1)
     webrick (1.8.2)
     websocket (1.2.10)
     websocket-driver (0.7.6)
