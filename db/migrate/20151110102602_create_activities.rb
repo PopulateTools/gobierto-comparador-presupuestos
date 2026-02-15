@@ -8,7 +8,7 @@ class CreateActivities < ActiveRecord::Migration[4.2]
       t.string  :key
       t.text    :parameters
       t.belongs_to :recipient, :polymorphic => true
-      t.inet    :ip
+      t.string  :ip
 
       t.timestamps
     end

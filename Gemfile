@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem "rails", "~> 7.1.4"
-gem "pg", "~> 1.5"
+gem "sqlite3", "~> 1.7"
 gem 'sass-rails', '~> 5.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'redcarpet', require: true
@@ -17,7 +17,7 @@ gem 'config'
 gem 'dalli'
 gem "aws-ses", git: "https://github.com/zebitex/aws-ses.git", ref: "78-sigv4-problem"
 gem 'cocoon'
-gem 'nokogiri', '~> 1.16'
+gem 'nokogiri', '~> 1.18'
 gem 'json', '~> 2.1'
 gem "gobierto_budgets_data", git: "https://github.com/PopulateTools/gobierto_budgets_data.git"
 gem "bootsnap"
@@ -60,7 +60,7 @@ end
 
 group :test do
   gem 'database_cleaner'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 6.1'
   gem 'capybara'
   gem 'launchy'
   gem 'email_spec'
