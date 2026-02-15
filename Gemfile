@@ -23,6 +23,8 @@ gem "gobierto_budgets_data", git: "https://github.com/PopulateTools/gobierto_bud
 gem "bootsnap"
 gem 'sprockets', '~> 3.7.2'
 gem "i18n-tasks"
+# Connection pool v3 is not compatible with Rails 8.1
+gem "connection_pool", "<3"
 
 # Socrata integration
 gem 'soda-ruby', '~> 0.2.24', require: 'soda'
