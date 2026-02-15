@@ -10,28 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2018_05_28_083158) do
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
-  create_table "activities", id: :serial, force: :cascade do |t|
-    t.string "trackable_type"
-    t.integer "trackable_id"
-    t.string "owner_type"
-    t.integer "owner_id"
-    t.string "key"
-    t.text "parameters"
-    t.string "recipient_type"
-    t.integer "recipient_id"
-    t.inet "ip"
-    t.datetime "created_at", precision: nil
-    t.datetime "updated_at", precision: nil
-    t.index ["owner_id", "owner_type"], name: "index_activities_on_owner_id_and_owner_type"
-    t.index ["recipient_id", "recipient_type"], name: "index_activities_on_recipient_id_and_recipient_type"
-    t.index ["trackable_id", "trackable_type"], name: "index_activities_on_trackable_id_and_trackable_type"
-  end
-
-  create_table "answers", id: :serial, force: :cascade do |t|
+ActiveRecord::Schema[7.1].define(version: 2026_01_30_082007) do
+  create_table "answers", force: :cascade do |t|
     t.integer "user_id"
     t.string "temporary_user_id"
     t.string "answer_text"
@@ -45,7 +25,7 @@ ActiveRecord::Schema[7.1].define(version: 2018_05_28_083158) do
     t.string "code"
   end
 
-  create_table "delayed_jobs", id: :serial, force: :cascade do |t|
+  create_table "delayed_jobs", force: :cascade do |t|
     t.integer "priority", default: 0, null: false
     t.integer "attempts", default: 0, null: false
     t.text "handler", null: false
@@ -60,7 +40,7 @@ ActiveRecord::Schema[7.1].define(version: 2018_05_28_083158) do
     t.index ["priority", "run_at"], name: "delayed_jobs_priority"
   end
 
-  create_table "friendly_id_slugs", id: :serial, force: :cascade do |t|
+  create_table "friendly_id_slugs", force: :cascade do |t|
     t.string "slug", null: false
     t.integer "sluggable_id", null: false
     t.string "sluggable_type", limit: 50
@@ -82,7 +62,7 @@ ActiveRecord::Schema[7.1].define(version: 2018_05_28_083158) do
     t.index ["slug"], name: "index_gobierto_budgets_associated_entities_on_slug", unique: true
   end
 
-  create_table "gobierto_cms_attachments", id: :serial, force: :cascade do |t|
+  create_table "gobierto_cms_attachments", force: :cascade do |t|
     t.string "attachment_file_name"
     t.string "attachment_content_type"
     t.integer "attachment_file_size"
@@ -93,7 +73,7 @@ ActiveRecord::Schema[7.1].define(version: 2018_05_28_083158) do
     t.integer "site_id", null: false
   end
 
-  create_table "gobierto_cms_pages", id: :serial, force: :cascade do |t|
+  create_table "gobierto_cms_pages", force: :cascade do |t|
     t.string "title"
     t.string "slug"
     t.text "body"
@@ -110,7 +90,7 @@ ActiveRecord::Schema[7.1].define(version: 2018_05_28_083158) do
     t.index ["slug"], name: "index_gobierto_cms_pages_on_slug"
   end
 
-  create_table "gobierto_participation_comments", id: :serial, force: :cascade do |t|
+  create_table "gobierto_participation_comments", force: :cascade do |t|
     t.integer "user_id", null: false
     t.text "body"
     t.integer "commentable_id", null: false
@@ -126,7 +106,7 @@ ActiveRecord::Schema[7.1].define(version: 2018_05_28_083158) do
     t.index ["user_id"], name: "index_gobierto_participation_comments_on_user_id"
   end
 
-  create_table "gobierto_participation_consultation_answers", id: :serial, force: :cascade do |t|
+  create_table "gobierto_participation_consultation_answers", force: :cascade do |t|
     t.integer "consultation_id", null: false
     t.string "answer"
     t.text "comment"
@@ -142,7 +122,7 @@ ActiveRecord::Schema[7.1].define(version: 2018_05_28_083158) do
     t.index ["user_id"], name: "gp_consultation_answers_user_id"
   end
 
-  create_table "gobierto_participation_consultation_options", id: :serial, force: :cascade do |t|
+  create_table "gobierto_participation_consultation_options", force: :cascade do |t|
     t.integer "consultation_id", null: false
     t.string "option"
     t.integer "position"
@@ -154,7 +134,7 @@ ActiveRecord::Schema[7.1].define(version: 2018_05_28_083158) do
     t.index ["deleted_at"], name: "index_gobierto_participation_consultation_options_on_deleted_at"
   end
 
-  create_table "gobierto_participation_consultations", id: :serial, force: :cascade do |t|
+  create_table "gobierto_participation_consultations", force: :cascade do |t|
     t.integer "user_id", null: false
     t.string "title"
     t.text "body"
@@ -169,7 +149,7 @@ ActiveRecord::Schema[7.1].define(version: 2018_05_28_083158) do
     t.index ["user_id"], name: "index_gobierto_participation_consultations_on_user_id"
   end
 
-  create_table "gobierto_participation_ideas", id: :serial, force: :cascade do |t|
+  create_table "gobierto_participation_ideas", force: :cascade do |t|
     t.integer "user_id", null: false
     t.string "title"
     t.text "body"
@@ -183,7 +163,7 @@ ActiveRecord::Schema[7.1].define(version: 2018_05_28_083158) do
     t.index ["user_id"], name: "index_gobierto_participation_ideas_on_user_id"
   end
 
-  create_table "sites", id: :serial, force: :cascade do |t|
+  create_table "sites", force: :cascade do |t|
     t.string "external_id"
     t.string "name"
     t.string "domain"
@@ -199,7 +179,7 @@ ActiveRecord::Schema[7.1].define(version: 2018_05_28_083158) do
     t.datetime "updated_at", precision: nil, null: false
   end
 
-  create_table "subscriptions", id: :serial, force: :cascade do |t|
+  create_table "subscriptions", force: :cascade do |t|
     t.integer "user_id", null: false
     t.integer "place_id", null: false
     t.datetime "created_at", precision: nil, null: false
@@ -208,7 +188,7 @@ ActiveRecord::Schema[7.1].define(version: 2018_05_28_083158) do
     t.index ["user_id"], name: "index_subscriptions_on_user_id"
   end
 
-  create_table "users", id: :serial, force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
     t.string "email"
@@ -231,10 +211,10 @@ ActiveRecord::Schema[7.1].define(version: 2018_05_28_083158) do
   end
 
   add_foreign_key "gobierto_participation_comments", "users"
-  add_foreign_key "gobierto_participation_consultation_answers", "gobierto_participation_consultation_options", column: "consultation_option_id", name: "fk_gp_consultation_answers_consultation_option_id"
-  add_foreign_key "gobierto_participation_consultation_answers", "gobierto_participation_consultations", column: "consultation_id", name: "fk_gp_consultation_answers_consultation_id"
-  add_foreign_key "gobierto_participation_consultation_answers", "users", name: "fk_gp_consultation_answers_user_id"
-  add_foreign_key "gobierto_participation_consultation_options", "gobierto_participation_consultations", column: "consultation_id", name: "fk_gp_consultation_options_on_consultation_id"
+  add_foreign_key "gobierto_participation_consultation_answers", "gobierto_participation_consultation_options", column: "consultation_option_id"
+  add_foreign_key "gobierto_participation_consultation_answers", "gobierto_participation_consultations", column: "consultation_id"
+  add_foreign_key "gobierto_participation_consultation_answers", "users"
+  add_foreign_key "gobierto_participation_consultation_options", "gobierto_participation_consultations", column: "consultation_id"
   add_foreign_key "gobierto_participation_consultations", "users"
   add_foreign_key "gobierto_participation_ideas", "users"
   add_foreign_key "subscriptions", "users"
