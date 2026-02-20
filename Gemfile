@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem "rails", "~> 7.1.4"
-gem "pg", "~> 1.5"
+gem "sqlite3", "~> 1.7"
 gem 'sass-rails', '~> 5.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'redcarpet', require: true
@@ -23,6 +23,8 @@ gem "gobierto_budgets_data", git: "https://github.com/PopulateTools/gobierto_bud
 gem "bootsnap"
 gem 'sprockets', '~> 3.7.2'
 gem "i18n-tasks"
+# Connection pool v3 is not compatible with Rails 8.1
+gem "connection_pool", "<3"
 
 # Socrata integration
 gem 'soda-ruby', '~> 0.2.24', require: 'soda'
@@ -60,7 +62,7 @@ end
 
 group :test do
   gem 'database_cleaner'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 6.1'
   gem 'capybara'
   gem 'launchy'
   gem 'email_spec'
