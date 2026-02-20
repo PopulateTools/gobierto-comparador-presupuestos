@@ -183,12 +183,12 @@ GEM
     erb (6.0.1)
     erubi (1.13.1)
     execjs (2.9.1)
-    faraday (2.12.0)
-      faraday-net_http (>= 2.0, < 3.4)
+    faraday (2.14.1)
+      faraday-net_http (>= 2.0, < 3.5)
       json
       logger
-    faraday-net_http (3.3.0)
-      net-http
+    faraday-net_http (3.4.2)
+      net-http (~> 0.5)
     ffi (1.16.3)
     flight-for-rails (1.5.1)
       jquery-rails (>= 2.1.4)
@@ -277,8 +277,8 @@ GEM
     multi_json (1.15.0)
     multipart-post (2.0.0)
     mutex_m (0.3.0)
-    net-http (0.4.1)
-      uri
+    net-http (0.9.1)
+      uri (>= 0.11.1)
     net-imap (0.4.20)
       date
       net-protocol
@@ -289,9 +289,9 @@ GEM
     net-smtp (0.5.0)
       net-protocol
     nio4r (2.7.3)
-    nokogiri (1.19.0-arm64-darwin)
+    nokogiri (1.19.1-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.19.0-x86_64-linux-gnu)
+    nokogiri (1.19.1-x86_64-linux-gnu)
       racc (~> 1.4)
     oj (3.16.6)
       bigdecimal (>= 3.0)
@@ -312,7 +312,7 @@ GEM
     puma (6.4.3)
       nio4r (~> 2.0)
     racc (1.8.1)
-    rack (2.2.21)
+    rack (2.2.22)
     rack-rewrite (1.5.1)
     rack-session (1.0.2)
       rack (< 3)
@@ -459,7 +459,7 @@ GEM
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (2.5.0)
-    uri (0.13.3)
+    uri (1.1.1)
     webrick (1.9.2)
     websocket (1.2.10)
     websocket-driver (0.7.6)
@@ -504,7 +504,7 @@ DEPENDENCIES
   launchy
   lograge
   meta-tags
-  nokogiri (~> 1.18)
+  nokogiri (~> 1.19)
   oj
   puma (~> 6.4, >= 6.4.3)
   rack-rewrite (~> 1.5.0)
