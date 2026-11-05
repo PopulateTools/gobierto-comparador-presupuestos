@@ -155,7 +155,7 @@ GEM
     connection_pool (2.5.5)
     cookies_eu (1.7.8)
       js_cookie_rails (~> 2.2.0)
-    crass (1.0.7)
+    crass (1.0.8)
     dalli (3.2.8)
     database_cleaner (2.0.2)
       database_cleaner-active_record (>= 2, < 3)
