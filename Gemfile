@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem "rails", "~> 7.1.4"
-gem "sqlite3", "~> 2.9"
+gem "sqlite3", "~> 2.10"
 gem 'sass-rails', '~> 5.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'redcarpet', require: true
