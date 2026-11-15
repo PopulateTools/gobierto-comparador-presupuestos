@@ -26,22 +26,21 @@ Crea un [issue](https://github.com/PopulateTools/gobierto-comparador-presupuesto
 
 ## Arquitectura de la aplicación
 
-La aplicación está escrita en Ruby y usa el framework Ruby on Rails. Para la Base de Datos usa PostgreSQL y también usa ElasticSearch para almacenar toda la información de presupuestos y otros datos de terceros.
+La aplicación está escrita en Ruby y usa el framework Ruby on Rails. Para la Base de Datos usa SQLite y también usa ElasticSearch para almacenar toda la información de presupuestos y otros datos de terceros.
 
 ## Desarrollo
 
 ### Requerimientos de Software
 
 - Git
-- Ruby 2.7.4
+- Ruby (versión en `.ruby-version`)
 - Rubygems
-- PostgreSQL
-- Elastic Search
+- Elastic Search 7.17
 - Pow or another subdomains tool
 
 ### Prepara la base de datos
 
-Una vez tengas PostgreSQL corriendo y hayas clonado este repo, haz lo siguiente en el terminal:
+Una vez hayas clonado este repo, haz lo siguiente en el terminal:
 
 ```
 $ git clone git@github.com:PopulateTools/gobierto-comparador-presupuestos.git
@@ -69,6 +68,15 @@ Si simplemente quieres cargar unos cuantos datos para empezar a trabajar, haz lo
 Esto cargará los datos para Madrid, Barcelona y Bilbao y activará el Site de Municipio de prueba para Madrigal de la vera.
 
 Alternativamente, aquí puedes ver [cómo cargar los datos](https://github.com/PopulateTools/gobierto/wiki/Loading-Gobierto-Data) para más municipios de España.
+
+### Tests
+
+Los tests son de request y leen de Elasticsearch los presupuestos de Madrid y Santander para 2024 y 2025 que hay en `spec/fixtures/elasticsearch`. Se cargan al arrancar la suite en índices con prefijo `test-`, así que no tocan los datos de desarrollo:
+
+```
+$ RAILS_ENV=test bin/rails db:schema:load
+$ bundle exec rspec
+```
 
 ### Crea el subdominio y lanza la aplicación
 
