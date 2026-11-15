@@ -18,7 +18,7 @@ gem 'dalli'
 gem "aws-ses", git: "https://github.com/zebitex/aws-ses.git", ref: "78-sigv4-problem"
 gem 'cocoon'
 gem 'nokogiri', '~> 1.19'
-gem 'json', '~> 2.1'
+gem 'json', '~> 3.1'
 gem "gobierto_budgets_data", git: "https://github.com/PopulateTools/gobierto_budgets_data.git"
 gem "bootsnap"
 gem "sprockets", "~> 4.2"
