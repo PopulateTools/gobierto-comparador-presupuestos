@@ -86,7 +86,7 @@ Rails.application.routes.draw do
     get 'categories/:slug/:year/:area/:kind' => 'search#categories', as: :search_categories
     get '/mapas/:year' => 'pages#map', as: :map
 
-    get '/budget_lines/*slug/:year/:code/:kind/:area/feedback/:question_id' => 'budget_lines#feedback', as: :budget_line_feedback, constraints: BUDGET_LINE_CONSTRAINTS
+    get "/municipios/*slug/partida/:year/:code/:kind/:area/feedback/:question_id" => "budget_lines#feedback", as: :budget_line_feedback, constraints: BUDGET_LINE_CONSTRAINTS, defaults: { places_collection: "ine" }
 
     # municipalities
     get "/municipios/*slug/partida/:year/:code/:kind/:area" => "budget_lines#show", as: :budget_line, constraints: BUDGET_LINE_CONSTRAINTS, defaults: { places_collection: "ine" }
@@ -106,7 +106,7 @@ Rails.application.routes.draw do
     get '/compara/municipios/:slug_list/:year/:kind/:area' => 'places#compare', as: :places_compare, defaults: { places_collection: "ine" }
 
     get "/ranking/municipios/:year/:kind/:area/:variable(/:code)(/p/:page)" => "places#ranking", as: :places_ranking, defaults: { places_collection: "ine" }
-    get "/ranking/municipios/:year/population(/:page)" => "places#ranking", as: :population_ranking, defaults: { places_collection: "ine" }
+    get "/ranking/municipios/:year/population(/:page)" => "places#ranking", as: :population_ranking, defaults: { places_collection: "ine", variable: "population" }
 
     get 'ranking/municipios' => 'pages#ranking', as: :ranking, defaults: { places_collection: "ine" }
 
@@ -125,7 +125,7 @@ Rails.application.routes.draw do
     get '/compara/diputaciones/:slug_list/:year/:kind/:area' => 'places#compare', as: :deputations_places_compare, defaults: { places_collection: "deputation_eu" }
 
     get "/ranking/diputaciones/:year/:kind/:area/:variable(/:code)(/p/:page)" => "places#ranking", as: :deputations_places_ranking, defaults: { places_collection: "deputation_eu" }
-    get "/ranking/diputaciones/:year/population(/:page)" => "places#ranking", as: :deputations_population_ranking, defaults: { places_collection: "deputation_eu" }
+    get "/ranking/diputaciones/:year/population(/:page)" => "places#ranking", as: :deputations_population_ranking, defaults: { places_collection: "deputation_eu", variable: "population" }
 
     get 'ranking/diputaciones' => 'pages#deputations_ranking', as: :deputations_ranking, defaults: { places_collection: "deputation_eu" }
 
