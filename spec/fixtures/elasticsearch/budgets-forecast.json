@@ -1,0 +1,4101 @@
+{
+ "mappings": {
+  "properties": {
+   "amount": {
+    "type": "double"
+   },
+   "amount_per_inhabitant": {
+    "type": "double"
+   },
+   "autonomy_id": {
+    "type": "integer"
+   },
+   "code": {
+    "type": "keyword"
+   },
+   "custom_code": {
+    "type": "keyword"
+   },
+   "functional_code": {
+    "type": "keyword"
+   },
+   "ine_code": {
+    "type": "integer"
+   },
+   "kind": {
+    "type": "keyword"
+   },
+   "level": {
+    "type": "integer"
+   },
+   "organization_id": {
+    "type": "keyword"
+   },
+   "parent_code": {
+    "type": "keyword"
+   },
+   "population": {
+    "type": "long"
+   },
+   "province_id": {
+    "type": "integer"
+   },
+   "type": {
+    "type": "keyword"
+   },
+   "year": {
+    "type": "integer"
+   }
+  }
+ },
+ "documents": [
+  {
+   "id": "28079/2024/0-1-c/G/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 338151,
+    "code": "0",
+    "level": 1,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 223.0,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/0-1-c/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 503373,
+    "code": "0",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 280.5,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/0-1-f}/G/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 523968,
+    "code": "0",
+    "level": 1,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 216.0,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/0-1-f}/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 868445,
+    "code": "0",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 207.5,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/0/G/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 359358,
+    "code": "0",
+    "type": "custom",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 267.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/0/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 523017,
+    "code": "0",
+    "type": "functional",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 249.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/0/I/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 912169,
+    "code": "0",
+    "type": "custom",
+    "level": 1,
+    "kind": "I",
+    "amount_per_inhabitant": 351.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/1-1-c/G/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 285786,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 434.0,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/1-1-c/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 831846,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 26.0,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/1-1-c/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 278102,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 297.0,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/1-1-f}/G/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 719793,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 215.5,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/1-1-f}/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 843616,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 222.0,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/1-1-f}/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 691376,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 67.0,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/1/G/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 35806,
+    "code": "1",
+    "type": "custom",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 275.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/1/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 438910,
+    "code": "1",
+    "type": "economic",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 6.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/1/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 212358,
+    "code": "1",
+    "type": "functional",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 102.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/1/I/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 222739,
+    "code": "1",
+    "type": "custom",
+    "level": 1,
+    "kind": "I",
+    "amount_per_inhabitant": 370.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/1/I/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 52011,
+    "code": "1",
+    "type": "economic",
+    "level": 1,
+    "kind": "I",
+    "amount_per_inhabitant": 119.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/10-1-c/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 678967,
+    "code": "10",
+    "level": 2,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 42.0,
+    "custom_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "28079/2024/10-1-f}/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 40097,
+    "code": "10",
+    "level": 2,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 289.0,
+    "functional_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "28079/2024/10/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 306987,
+    "code": "10",
+    "type": "economic",
+    "level": 2,
+    "kind": "G",
+    "amount_per_inhabitant": 35.5,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "28079/2024/10/I/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 491762,
+    "code": "10",
+    "type": "economic",
+    "level": 2,
+    "kind": "I",
+    "amount_per_inhabitant": 396.5,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "28079/2024/13-1-c/G/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 688097,
+    "code": "13",
+    "level": 2,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 340.0,
+    "custom_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "28079/2024/13-1-c/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 714278,
+    "code": "13",
+    "level": 2,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 349.5,
+    "custom_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "28079/2024/13-1-f}/G/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 173290,
+    "code": "13",
+    "level": 2,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 243.5,
+    "functional_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "28079/2024/13-1-f}/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 151037,
+    "code": "13",
+    "level": 2,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 327.5,
+    "functional_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "28079/2024/13/G/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 362500,
+    "code": "13",
+    "type": "custom",
+    "level": 2,
+    "kind": "G",
+    "amount_per_inhabitant": 247.5,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "28079/2024/13/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 700943,
+    "code": "13",
+    "type": "functional",
+    "level": 2,
+    "kind": "G",
+    "amount_per_inhabitant": 95.5,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "28079/2024/13/I/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 48222,
+    "code": "13",
+    "type": "custom",
+    "level": 2,
+    "kind": "I",
+    "amount_per_inhabitant": 333.5,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "28079/2024/130-1-c/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 859076,
+    "code": "130",
+    "level": 3,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 384.5,
+    "custom_code": 1,
+    "parent_code": 13
+   }
+  },
+  {
+   "id": "28079/2024/130-1-f}/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 145794,
+    "code": "130",
+    "level": 3,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 278.0,
+    "functional_code": 1,
+    "parent_code": 13
+   }
+  },
+  {
+   "id": "28079/2024/130/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 158954,
+    "code": "130",
+    "type": "functional",
+    "level": 3,
+    "kind": "G",
+    "amount_per_inhabitant": 363.5,
+    "parent_code": 13
+   }
+  },
+  {
+   "id": "28079/2024/2-1-c/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 384810,
+    "code": "2",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 447.0,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/2-1-c/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 434421,
+    "code": "2",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 338.5,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/2-1-f}/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 738493,
+    "code": "2",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 67.0,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/2-1-f}/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 239475,
+    "code": "2",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 163.5,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/2/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 758360,
+    "code": "2",
+    "type": "economic",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 144.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/2/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 178546,
+    "code": "2",
+    "type": "functional",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 241.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/2/I/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 298607,
+    "code": "2",
+    "type": "economic",
+    "level": 1,
+    "kind": "I",
+    "amount_per_inhabitant": 17.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/20-1-c/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 172507,
+    "code": "20",
+    "level": 2,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 261.0,
+    "custom_code": 1,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "28079/2024/20-1-f}/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 774344,
+    "code": "20",
+    "level": 2,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 41.5,
+    "functional_code": 1,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "28079/2024/20/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 650316,
+    "code": "20",
+    "type": "economic",
+    "level": 2,
+    "kind": "G",
+    "amount_per_inhabitant": 262.5,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "28079/2024/21/I/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 903908,
+    "code": "21",
+    "type": "economic",
+    "level": 2,
+    "kind": "I",
+    "amount_per_inhabitant": 312.0,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "28079/2024/210/I/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 305741,
+    "code": "210",
+    "type": "economic",
+    "level": 3,
+    "kind": "I",
+    "amount_per_inhabitant": 466.0,
+    "parent_code": 21
+   }
+  },
+  {
+   "id": "28079/2024/22-1-c/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 7356,
+    "code": "22",
+    "level": 2,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 471.5,
+    "custom_code": 1,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "28079/2024/22-1-f}/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 146825,
+    "code": "22",
+    "level": 2,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 128.5,
+    "functional_code": 1,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "28079/2024/22/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 15694,
+    "code": "22",
+    "type": "functional",
+    "level": 2,
+    "kind": "G",
+    "amount_per_inhabitant": 407.0,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "28079/2024/3-1-c/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 580194,
+    "code": "3",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 301.5,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/3-1-c/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 55786,
+    "code": "3",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 270.5,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/3-1-f}/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 564553,
+    "code": "3",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 190.5,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/3-1-f}/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 930903,
+    "code": "3",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 132.0,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/3/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 937940,
+    "code": "3",
+    "type": "economic",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 280.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/3/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 616483,
+    "code": "3",
+    "type": "functional",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 382.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2024/G/total-budget",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "kind": "G",
+    "type": "total-budget",
+    "amount": 357309,
+    "amount_per_inhabitant": 139634
+   }
+  },
+  {
+   "id": "28079/2024/I/total-budget",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "kind": "I",
+    "type": "total-budget",
+    "amount": 670623,
+    "amount_per_inhabitant": 521820
+   }
+  },
+  {
+   "id": "28079/2025/0-1-c/G/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 433681,
+    "code": "0",
+    "level": 1,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 3.5,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/0-1-c/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 936425,
+    "code": "0",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 27.5,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/0-1-f}/G/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 195399,
+    "code": "0",
+    "level": 1,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 406.5,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/0-1-f}/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 841606,
+    "code": "0",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 186.0,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/0/G/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 934701,
+    "code": "0",
+    "type": "custom",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 431.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/0/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 725782,
+    "code": "0",
+    "type": "functional",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 73.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/0/I/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 942660,
+    "code": "0",
+    "type": "custom",
+    "level": 1,
+    "kind": "I",
+    "amount_per_inhabitant": 15.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/1-1-c/G/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 253175,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 91.0,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/1-1-c/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 299519,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 433.0,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/1-1-c/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 329879,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 291.0,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/1-1-f}/G/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 17692,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 164.5,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/1-1-f}/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 38338,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 319.0,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/1-1-f}/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 810846,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 100.5,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/1/G/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 302053,
+    "code": "1",
+    "type": "custom",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 67.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/1/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 891800,
+    "code": "1",
+    "type": "economic",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 354.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/1/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 461539,
+    "code": "1",
+    "type": "functional",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 272.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/1/I/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 941191,
+    "code": "1",
+    "type": "custom",
+    "level": 1,
+    "kind": "I",
+    "amount_per_inhabitant": 488.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/1/I/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 530553,
+    "code": "1",
+    "type": "economic",
+    "level": 1,
+    "kind": "I",
+    "amount_per_inhabitant": 39.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/10-1-c/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 101178,
+    "code": "10",
+    "level": 2,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 131.5,
+    "custom_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "28079/2025/10-1-f}/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 786488,
+    "code": "10",
+    "level": 2,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 470.0,
+    "functional_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "28079/2025/10/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 500509,
+    "code": "10",
+    "type": "economic",
+    "level": 2,
+    "kind": "G",
+    "amount_per_inhabitant": 143.5,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "28079/2025/10/I/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 395643,
+    "code": "10",
+    "type": "economic",
+    "level": 2,
+    "kind": "I",
+    "amount_per_inhabitant": 382.5,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "28079/2025/13-1-c/G/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 981573,
+    "code": "13",
+    "level": 2,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 218.0,
+    "custom_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "28079/2025/13-1-c/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 463853,
+    "code": "13",
+    "level": 2,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 181.0,
+    "custom_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "28079/2025/13-1-f}/G/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 701845,
+    "code": "13",
+    "level": 2,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 223.0,
+    "functional_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "28079/2025/13-1-f}/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 330739,
+    "code": "13",
+    "level": 2,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 364.5,
+    "functional_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "28079/2025/13/G/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 768878,
+    "code": "13",
+    "type": "custom",
+    "level": 2,
+    "kind": "G",
+    "amount_per_inhabitant": 102.5,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "28079/2025/13/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 920351,
+    "code": "13",
+    "type": "functional",
+    "level": 2,
+    "kind": "G",
+    "amount_per_inhabitant": 160.5,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "28079/2025/13/I/custom",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 61954,
+    "code": "13",
+    "type": "custom",
+    "level": 2,
+    "kind": "I",
+    "amount_per_inhabitant": 125.5,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "28079/2025/130-1-c/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 873569,
+    "code": "130",
+    "level": 3,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 165.0,
+    "custom_code": 1,
+    "parent_code": 13
+   }
+  },
+  {
+   "id": "28079/2025/130-1-f}/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 250428,
+    "code": "130",
+    "level": 3,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 179.5,
+    "functional_code": 1,
+    "parent_code": 13
+   }
+  },
+  {
+   "id": "28079/2025/130/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 809581,
+    "code": "130",
+    "type": "functional",
+    "level": 3,
+    "kind": "G",
+    "amount_per_inhabitant": 321.0,
+    "parent_code": 13
+   }
+  },
+  {
+   "id": "28079/2025/2-1-c/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 715094,
+    "code": "2",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 27.5,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/2-1-c/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 453692,
+    "code": "2",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 305.5,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/2-1-f}/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 878050,
+    "code": "2",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 165.5,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/2-1-f}/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 223710,
+    "code": "2",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 309.0,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/2/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 642736,
+    "code": "2",
+    "type": "economic",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 227.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/2/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 147831,
+    "code": "2",
+    "type": "functional",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 84.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/2/I/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 785189,
+    "code": "2",
+    "type": "economic",
+    "level": 1,
+    "kind": "I",
+    "amount_per_inhabitant": 53.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/20-1-c/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 62051,
+    "code": "20",
+    "level": 2,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 63.0,
+    "custom_code": 1,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "28079/2025/20-1-f}/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 842744,
+    "code": "20",
+    "level": 2,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 362.0,
+    "functional_code": 1,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "28079/2025/20/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 923884,
+    "code": "20",
+    "type": "economic",
+    "level": 2,
+    "kind": "G",
+    "amount_per_inhabitant": 381.5,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "28079/2025/21/I/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 201042,
+    "code": "21",
+    "type": "economic",
+    "level": 2,
+    "kind": "I",
+    "amount_per_inhabitant": 221.5,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "28079/2025/210/I/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 622068,
+    "code": "210",
+    "type": "economic",
+    "level": 3,
+    "kind": "I",
+    "amount_per_inhabitant": 356.5,
+    "parent_code": 21
+   }
+  },
+  {
+   "id": "28079/2025/22-1-c/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 178615,
+    "code": "22",
+    "level": 2,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 255.0,
+    "custom_code": 1,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "28079/2025/22-1-f}/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 116534,
+    "code": "22",
+    "level": 2,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 307.0,
+    "functional_code": 1,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "28079/2025/22/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 38742,
+    "code": "22",
+    "type": "functional",
+    "level": 2,
+    "kind": "G",
+    "amount_per_inhabitant": 164.5,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "28079/2025/3-1-c/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 386909,
+    "code": "3",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 442.0,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/3-1-c/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 763544,
+    "code": "3",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 134.5,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/3-1-f}/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 893494,
+    "code": "3",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 269.0,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/3-1-f}/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 699113,
+    "code": "3",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 125.0,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/3/G/economic",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 350423,
+    "code": "3",
+    "type": "economic",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 107.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/3/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 319265,
+    "code": "3",
+    "type": "functional",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 186.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "28079/2025/G/total-budget",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "kind": "G",
+    "type": "total-budget",
+    "amount": 578006,
+    "amount_per_inhabitant": 516829
+   }
+  },
+  {
+   "id": "28079/2025/I/total-budget",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "kind": "I",
+    "type": "total-budget",
+    "amount": 925335,
+    "amount_per_inhabitant": 179358
+   }
+  },
+  {
+   "id": "39075/2024/0-1-c/G/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 511114,
+    "code": "0",
+    "level": 1,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 203.5,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/0-1-c/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 489956,
+    "code": "0",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 173.5,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/0-1-f}/G/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 437180,
+    "code": "0",
+    "level": 1,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 231.5,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/0-1-f}/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 11586,
+    "code": "0",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 344.0,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/0/G/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 584886,
+    "code": "0",
+    "type": "custom",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 197.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/0/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 968810,
+    "code": "0",
+    "type": "functional",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 360.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/0/I/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 609490,
+    "code": "0",
+    "type": "custom",
+    "level": 1,
+    "kind": "I",
+    "amount_per_inhabitant": 168.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/1-1-c/G/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 293592,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 98.0,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/1-1-c/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 384138,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 334.5,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/1-1-c/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 600062,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 203.5,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/1-1-f}/G/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 416650,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 472.0,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/1-1-f}/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 446523,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 358.5,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/1-1-f}/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 310536,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 460.5,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/1/G/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 853559,
+    "code": "1",
+    "type": "custom",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 341.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/1/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 890863,
+    "code": "1",
+    "type": "economic",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 126.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/1/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 929081,
+    "code": "1",
+    "type": "functional",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 351.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/1/I/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 461411,
+    "code": "1",
+    "type": "custom",
+    "level": 1,
+    "kind": "I",
+    "amount_per_inhabitant": 92.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/1/I/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 356875,
+    "code": "1",
+    "type": "economic",
+    "level": 1,
+    "kind": "I",
+    "amount_per_inhabitant": 282.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/10-1-c/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 412566,
+    "code": "10",
+    "level": 2,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 248.5,
+    "custom_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "39075/2024/10-1-f}/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 808018,
+    "code": "10",
+    "level": 2,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 149.0,
+    "functional_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "39075/2024/10/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 331747,
+    "code": "10",
+    "type": "economic",
+    "level": 2,
+    "kind": "G",
+    "amount_per_inhabitant": 315.5,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "39075/2024/10/I/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 681905,
+    "code": "10",
+    "type": "economic",
+    "level": 2,
+    "kind": "I",
+    "amount_per_inhabitant": 400.0,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "39075/2024/13-1-c/G/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 466068,
+    "code": "13",
+    "level": 2,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 242.0,
+    "custom_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "39075/2024/13-1-c/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 585348,
+    "code": "13",
+    "level": 2,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 447.5,
+    "custom_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "39075/2024/13-1-f}/G/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 954993,
+    "code": "13",
+    "level": 2,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 148.5,
+    "functional_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "39075/2024/13-1-f}/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 664266,
+    "code": "13",
+    "level": 2,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 293.0,
+    "functional_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "39075/2024/13/G/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 960288,
+    "code": "13",
+    "type": "custom",
+    "level": 2,
+    "kind": "G",
+    "amount_per_inhabitant": 105.5,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "39075/2024/13/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 984737,
+    "code": "13",
+    "type": "functional",
+    "level": 2,
+    "kind": "G",
+    "amount_per_inhabitant": 287.0,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "39075/2024/13/I/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 861123,
+    "code": "13",
+    "type": "custom",
+    "level": 2,
+    "kind": "I",
+    "amount_per_inhabitant": 365.0,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "39075/2024/130-1-c/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 912861,
+    "code": "130",
+    "level": 3,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 386.5,
+    "custom_code": 1,
+    "parent_code": 13
+   }
+  },
+  {
+   "id": "39075/2024/130-1-f}/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 410675,
+    "code": "130",
+    "level": 3,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 136.5,
+    "functional_code": 1,
+    "parent_code": 13
+   }
+  },
+  {
+   "id": "39075/2024/130/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 238572,
+    "code": "130",
+    "type": "functional",
+    "level": 3,
+    "kind": "G",
+    "amount_per_inhabitant": 1.5,
+    "parent_code": 13
+   }
+  },
+  {
+   "id": "39075/2024/2-1-c/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 606977,
+    "code": "2",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 151.0,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/2-1-c/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 176407,
+    "code": "2",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 489.0,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/2-1-f}/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 958460,
+    "code": "2",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 202.0,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/2-1-f}/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 599092,
+    "code": "2",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 201.5,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/2/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 653799,
+    "code": "2",
+    "type": "economic",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 151.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/2/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 64755,
+    "code": "2",
+    "type": "functional",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 67.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/2/I/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 548752,
+    "code": "2",
+    "type": "economic",
+    "level": 1,
+    "kind": "I",
+    "amount_per_inhabitant": 121.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/20-1-c/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 935522,
+    "code": "20",
+    "level": 2,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 153.5,
+    "custom_code": 1,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "39075/2024/20-1-f}/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 193645,
+    "code": "20",
+    "level": 2,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 156.0,
+    "functional_code": 1,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "39075/2024/20/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 837257,
+    "code": "20",
+    "type": "economic",
+    "level": 2,
+    "kind": "G",
+    "amount_per_inhabitant": 55.5,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "39075/2024/21/I/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 326636,
+    "code": "21",
+    "type": "economic",
+    "level": 2,
+    "kind": "I",
+    "amount_per_inhabitant": 258.0,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "39075/2024/210/I/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 269216,
+    "code": "210",
+    "type": "economic",
+    "level": 3,
+    "kind": "I",
+    "amount_per_inhabitant": 303.5,
+    "parent_code": 21
+   }
+  },
+  {
+   "id": "39075/2024/22-1-c/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 630827,
+    "code": "22",
+    "level": 2,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 266.0,
+    "custom_code": 1,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "39075/2024/22-1-f}/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 663135,
+    "code": "22",
+    "level": 2,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 351.0,
+    "functional_code": 1,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "39075/2024/22/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 520578,
+    "code": "22",
+    "type": "functional",
+    "level": 2,
+    "kind": "G",
+    "amount_per_inhabitant": 129.0,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "39075/2024/3-1-c/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 675294,
+    "code": "3",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 468.5,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/3-1-c/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 515813,
+    "code": "3",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 59.0,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/3-1-f}/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 99273,
+    "code": "3",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 280.5,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/3-1-f}/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 788736,
+    "code": "3",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 450.0,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/3/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 462038,
+    "code": "3",
+    "type": "economic",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 41.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/3/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "population": 901664,
+    "amount": 584486,
+    "code": "3",
+    "type": "functional",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 36.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2024/G/total-budget",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "kind": "G",
+    "type": "total-budget",
+    "amount": 779436,
+    "amount_per_inhabitant": 228131
+   }
+  },
+  {
+   "id": "39075/2024/I/total-budget",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2024,
+    "kind": "I",
+    "type": "total-budget",
+    "amount": 801532,
+    "amount_per_inhabitant": 623695
+   }
+  },
+  {
+   "id": "39075/2025/0-1-c/G/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 930363,
+    "code": "0",
+    "level": 1,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 17.0,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/0-1-c/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 514272,
+    "code": "0",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 199.5,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/0-1-f}/G/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 85086,
+    "code": "0",
+    "level": 1,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 499.0,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/0-1-f}/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 518526,
+    "code": "0",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 119.0,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/0/G/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 346386,
+    "code": "0",
+    "type": "custom",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 71.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/0/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 790593,
+    "code": "0",
+    "type": "functional",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 207.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/0/I/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 758405,
+    "code": "0",
+    "type": "custom",
+    "level": 1,
+    "kind": "I",
+    "amount_per_inhabitant": 131.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/1-1-c/G/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 807285,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 159.5,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/1-1-c/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 972867,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 142.0,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/1-1-c/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 525597,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 69.5,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/1-1-f}/G/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 835095,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 193.0,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/1-1-f}/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 603467,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 466.5,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/1-1-f}/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 428304,
+    "code": "1",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 160.5,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/1/G/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 569847,
+    "code": "1",
+    "type": "custom",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 411.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/1/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 642942,
+    "code": "1",
+    "type": "economic",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 75.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/1/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 485272,
+    "code": "1",
+    "type": "functional",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 169.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/1/I/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 814995,
+    "code": "1",
+    "type": "custom",
+    "level": 1,
+    "kind": "I",
+    "amount_per_inhabitant": 245.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/1/I/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 459093,
+    "code": "1",
+    "type": "economic",
+    "level": 1,
+    "kind": "I",
+    "amount_per_inhabitant": 107.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/10-1-c/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 760783,
+    "code": "10",
+    "level": 2,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 153.0,
+    "custom_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "39075/2025/10-1-f}/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 421282,
+    "code": "10",
+    "level": 2,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 285.5,
+    "functional_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "39075/2025/10/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 728162,
+    "code": "10",
+    "type": "economic",
+    "level": 2,
+    "kind": "G",
+    "amount_per_inhabitant": 205.5,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "39075/2025/10/I/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 538386,
+    "code": "10",
+    "type": "economic",
+    "level": 2,
+    "kind": "I",
+    "amount_per_inhabitant": 30.0,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "39075/2025/13-1-c/G/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 898117,
+    "code": "13",
+    "level": 2,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 146.0,
+    "custom_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "39075/2025/13-1-c/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 869489,
+    "code": "13",
+    "level": 2,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 313.5,
+    "custom_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "39075/2025/13-1-f}/G/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 181076,
+    "code": "13",
+    "level": 2,
+    "kind": "G",
+    "type": "custom",
+    "amount_per_inhabitant": 135.5,
+    "functional_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "39075/2025/13-1-f}/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 100570,
+    "code": "13",
+    "level": 2,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 276.0,
+    "functional_code": 1,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "39075/2025/13/G/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 81359,
+    "code": "13",
+    "type": "custom",
+    "level": 2,
+    "kind": "G",
+    "amount_per_inhabitant": 196.5,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "39075/2025/13/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 620876,
+    "code": "13",
+    "type": "functional",
+    "level": 2,
+    "kind": "G",
+    "amount_per_inhabitant": 153.0,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "39075/2025/13/I/custom",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 945209,
+    "code": "13",
+    "type": "custom",
+    "level": 2,
+    "kind": "I",
+    "amount_per_inhabitant": 43.0,
+    "parent_code": 1
+   }
+  },
+  {
+   "id": "39075/2025/130-1-c/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 111027,
+    "code": "130",
+    "level": 3,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 469.5,
+    "custom_code": 1,
+    "parent_code": 13
+   }
+  },
+  {
+   "id": "39075/2025/130-1-f}/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 650767,
+    "code": "130",
+    "level": 3,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 107.5,
+    "functional_code": 1,
+    "parent_code": 13
+   }
+  },
+  {
+   "id": "39075/2025/130/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 99523,
+    "code": "130",
+    "type": "functional",
+    "level": 3,
+    "kind": "G",
+    "amount_per_inhabitant": 14.5,
+    "parent_code": 13
+   }
+  },
+  {
+   "id": "39075/2025/2-1-c/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 916608,
+    "code": "2",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 221.0,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/2-1-c/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 990330,
+    "code": "2",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 127.0,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/2-1-f}/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 480860,
+    "code": "2",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 153.5,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/2-1-f}/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 250243,
+    "code": "2",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 270.5,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/2/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 685548,
+    "code": "2",
+    "type": "economic",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 437.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/2/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 119457,
+    "code": "2",
+    "type": "functional",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 138.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/2/I/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 251257,
+    "code": "2",
+    "type": "economic",
+    "level": 1,
+    "kind": "I",
+    "amount_per_inhabitant": 460.0,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/20-1-c/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 267243,
+    "code": "20",
+    "level": 2,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 22.5,
+    "custom_code": 1,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "39075/2025/20-1-f}/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 39282,
+    "code": "20",
+    "level": 2,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 312.0,
+    "functional_code": 1,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "39075/2025/20/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 129423,
+    "code": "20",
+    "type": "economic",
+    "level": 2,
+    "kind": "G",
+    "amount_per_inhabitant": 417.5,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "39075/2025/21/I/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 240741,
+    "code": "21",
+    "type": "economic",
+    "level": 2,
+    "kind": "I",
+    "amount_per_inhabitant": 59.5,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "39075/2025/210/I/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 953600,
+    "code": "210",
+    "type": "economic",
+    "level": 3,
+    "kind": "I",
+    "amount_per_inhabitant": 490.0,
+    "parent_code": 21
+   }
+  },
+  {
+   "id": "39075/2025/22-1-c/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 667465,
+    "code": "22",
+    "level": 2,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 287.5,
+    "custom_code": 1,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "39075/2025/22-1-f}/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 649224,
+    "code": "22",
+    "level": 2,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 189.0,
+    "functional_code": 1,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "39075/2025/22/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 973476,
+    "code": "22",
+    "type": "functional",
+    "level": 2,
+    "kind": "G",
+    "amount_per_inhabitant": 110.5,
+    "parent_code": 2
+   }
+  },
+  {
+   "id": "39075/2025/3-1-c/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 444642,
+    "code": "3",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 482.0,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/3-1-c/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 888675,
+    "code": "3",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 295.0,
+    "custom_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/3-1-f}/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 841843,
+    "code": "3",
+    "level": 1,
+    "kind": "G",
+    "type": "economic",
+    "amount_per_inhabitant": 225.0,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/3-1-f}/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 322072,
+    "code": "3",
+    "level": 1,
+    "kind": "G",
+    "type": "functional",
+    "amount_per_inhabitant": 446.0,
+    "functional_code": 1,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/3/G/economic",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 121468,
+    "code": "3",
+    "type": "economic",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 76.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/3/G/functional",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "population": 448436,
+    "amount": 304542,
+    "code": "3",
+    "type": "functional",
+    "level": 1,
+    "kind": "G",
+    "amount_per_inhabitant": 414.5,
+    "parent_code": null
+   }
+  },
+  {
+   "id": "39075/2025/G/total-budget",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "kind": "G",
+    "type": "total-budget",
+    "amount": 37175,
+    "amount_per_inhabitant": 928520
+   }
+  },
+  {
+   "id": "39075/2025/I/total-budget",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "province_id": 39,
+    "autonomy_id": 6,
+    "year": 2025,
+    "kind": "I",
+    "type": "total-budget",
+    "amount": 494206,
+    "amount_per_inhabitant": 126277
+   }
+  }
+ ]
+}
