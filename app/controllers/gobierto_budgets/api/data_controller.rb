@@ -504,33 +504,25 @@ module GobiertoBudgets
           terms << {terms: { organization_id: organizations_ids.compact }} if organizations_ids.any?
         end
 
-        query = {
-          query: {
-            bool: {
-              must: terms
-            }
-          },
-          size: 10_000,
-          _source: false
-        }
-
-        value = nil
         begin
-          response = GobiertoBudgets::SearchEngine.client.search index: GobiertoBudgets::SearchEngineConfiguration::Data.index, body: query
-          debts = response['hits']['hits'].map{|h| h['_id']}
-          position = debts.index(id) + 1 rescue 0
-
           value = GobiertoBudgets::SearchEngine.client.get index: GobiertoBudgets::SearchEngineConfiguration::Data.index, id: id
           value = value['_source']['value']
         rescue Elasticsearch::Transport::Transport::Errors::NotFound
-          debts = []
-          position = nil
+          return { value: nil, position: nil, total_elements: 0 }
         end
+
+        position, total_elements = GobiertoBudgets::SearchEngine.ranking_position(
+          index: GobiertoBudgets::SearchEngineConfiguration::Data.index,
+          query: { bool: { must: terms } },
+          field: :value,
+          id:,
+          value:
+        )
 
         return {
           value: value,
-          position: position,
-          total_elements: debts.length
+          position: position || 0,
+          total_elements: total_elements
         }
       end
 
