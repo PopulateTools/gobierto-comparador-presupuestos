@@ -37,14 +37,13 @@ The application is written in the Ruby programming language and uses the Ruby on
 - Elastic Search
 - Pow or another subdomains tool
 
-### Setup the database and the secrets file
+### Setup the database
 
 Once you have PostgreSQL running and have cloned the repository, do the following:
 
 ```
 $ cd gobierto
 $ cp config/database.yml.example config/database.yml
-$ cp config/secrets.yml.example config/secrets.yml
 $ bundle install
 $ rake db:setup
 ```
@@ -53,7 +52,7 @@ $ rake db:setup
 
 See [how](https://www.elastic.co/guide/en/elasticsearch/guide/current/running-elasticsearch.html)
 
-Once it is running, make sure you enter the correct URL for your Elastic Search instance in `config/secrets.yml` under the `elastic_url` key
+Once it is running, make sure you enter the correct URL for your Elastic Search instance in the `ELASTICSEARCH_URL` environment variable
 
 ### Load some data
 

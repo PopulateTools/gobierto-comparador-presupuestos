@@ -79,24 +79,18 @@ production:
   password:
 ```
 
-4 - Create `/var/www/gobierto/shared/config/secrets.yml`
+4 - Set the environment variables of the application
 
-```yaml
-production:
-  secret_key_base: ''
-  elastic_url: 'http://localhost:9200'
-  mailchimp_api_key: ''
-  amazon_access_key: ''
-  amazon_secret_key: ''
+```
+SECRET_KEY_BASE=
+ELASTICSEARCH_URL=http://localhost:9200
 ```
 
-4.1 - Run `rake secret` in your dev environment and paste the result as `secret_key_base`
+4.1 - Run `bin/rails secret` in your dev environment and paste the result as `SECRET_KEY_BASE`
 
 4.2 - Update the URL of the ElasticSearch in case you use a remote server
 
-4.3 - Paste your Mailchimp API Key
-
-4.4 - Paste Amazon credentials
+4.3 - Add `mailchimp_api_key`, `amazon_access_key` and `amazon_secret_key` to the production credentials with `bin/rails credentials:edit --environment production`
 
 5 - Deploy the site
 
