@@ -139,7 +139,7 @@ GEM
     config (5.6.1)
       deep_merge (~> 1.2, >= 1.2.1)
       ostruct
-    connection_pool (2.5.5)
+    connection_pool (3.0.2)
     cookies_eu (1.7.8)
       js_cookie_rails (~> 2.2.0)
     crass (1.0.8)
@@ -464,7 +464,6 @@ DEPENDENCIES
   byebug
   cocoon
   config
-  connection_pool (< 3)
   cookies_eu
   csv
   dalli
