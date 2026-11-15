@@ -46,8 +46,8 @@ module GobiertoBudgets
     end
 
     def self.ranking_hash_for(organization_id, year, opts = {})
-
-      buckets = for_year year, opts
+      # Every place of the year shares the same ranking
+      buckets = Rails.cache.fetch(["population_ranking", year, opts]) { for_year(year, opts) }
 
       if row = buckets.detect{|v| v['organization_id'].to_s == organization_id.to_s }
         value = row['value']

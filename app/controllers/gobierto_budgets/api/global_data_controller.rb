@@ -157,8 +157,7 @@ module GobiertoBudgets
               must: terms
             }
           },
-          size: 10_000,
-          _source: false,
+          size: 0,
           aggs: {
             total: {
               sum: {
@@ -190,8 +189,7 @@ module GobiertoBudgets
               must: terms
             }
           },
-          size: 10_000,
-          _source: false,
+          size: 0,
           aggs: {
             total: {
               sum: {
@@ -220,8 +218,7 @@ module GobiertoBudgets
               must: terms
             }
           },
-          size: 10_000,
-          _source: false,
+          size: 0,
           aggs: {
             total: {
               sum: {
@@ -250,8 +247,7 @@ module GobiertoBudgets
               must: terms
             }
           },
-          size: 10_000,
-          _source: false,
+          size: 0,
           aggs: {
             total: {
               sum: {
