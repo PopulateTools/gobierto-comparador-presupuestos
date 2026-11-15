@@ -2,6 +2,7 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require turbolinks
+//= require i18n
 //= require i18n/translations
 //= require velocity.min
 //= require velocity.ui.min

@@ -178,6 +178,7 @@ GEM
     flight-for-rails (1.5.1)
       jquery-rails (>= 2.1.4)
       rails (>= 3.1.0)
+    glob (0.5.0)
     globalid (1.4.0)
       activesupport (>= 6.1)
     google-protobuf (4.36.2-arm64-darwin)
@@ -191,8 +192,9 @@ GEM
       reline
     i18n (1.15.2)
       concurrent-ruby (~> 1.0)
-    i18n-js (3.9.2)
-      i18n (>= 0.6.6)
+    i18n-js (4.2.4)
+      glob (>= 0.4.0)
+      i18n
     i18n-tasks (1.2.1)
       activesupport (>= 4.0.2)
       ast (>= 2.1.0)
@@ -465,7 +467,7 @@ DEPENDENCIES
   flight-for-rails
   gobierto_budgets_data!
   hashie
-  i18n-js (~> 3.9.2)
+  i18n-js (~> 4.2)
   i18n-tasks
   ine-places
   jquery-rails

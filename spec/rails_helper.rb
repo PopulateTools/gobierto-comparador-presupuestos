@@ -18,6 +18,7 @@ RSpec.configure do |config|
 
   config.before(:suite) do
     ElasticsearchFixtures.load
+    I18nJsExport.call
   end
 
   config.after(:each) do
