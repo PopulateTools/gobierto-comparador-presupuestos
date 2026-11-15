@@ -644,6 +644,24 @@
    }
   },
   {
+   "id": "28079/2024/1300/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2024,
+    "population": 417852,
+    "amount": 41000,
+    "code": "1300",
+    "type": "functional",
+    "level": 4,
+    "kind": "G",
+    "amount_per_inhabitant": 0.1,
+    "parent_code": "130"
+   }
+  },
+  {
    "id": "28079/2024/2-1-c/G/economic",
    "source": {
     "organization_id": "28079",
@@ -1653,6 +1671,24 @@
     "kind": "G",
     "amount_per_inhabitant": 321.0,
     "parent_code": 13
+   }
+  },
+  {
+   "id": "28079/2025/1300/G/functional",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "province_id": 28,
+    "autonomy_id": 13,
+    "year": 2025,
+    "population": 63578,
+    "amount": 52000,
+    "code": "1300",
+    "type": "functional",
+    "level": 4,
+    "kind": "G",
+    "amount_per_inhabitant": 0.82,
+    "parent_code": "130"
    }
   },
   {

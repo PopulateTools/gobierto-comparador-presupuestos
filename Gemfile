@@ -61,13 +61,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'database_cleaner'
   gem 'rspec-rails', '~> 6.1'
-  gem 'capybara'
-  gem 'launchy'
-  gem 'email_spec'
-  gem 'selenium-webdriver'
-  gem 'rack-test', require: "rack/test"
 end
 
 group :development do
