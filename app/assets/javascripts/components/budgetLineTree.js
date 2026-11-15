@@ -61,7 +61,7 @@ function generateTargetUrl(node) {
           $(e.target).addClass('active');
           $(e.target).closest('tr').addClass('active');
 
-          var html = '<a href="#" data-category-code="reset" data-turbolinks="false" class="js-ranking-link" style="margin-left: auto">X</a>';
+          var html = '<a href="#" data-category-code="reset" data-turbo="false" class="js-ranking-link" style="margin-left: auto">X</a>';
           $(html).insertAfter($(e.target));
         }
 
@@ -202,7 +202,7 @@ function generateTargetUrl(node) {
       var lastTr = this.itemsParent.find('tr:last');
       var html = '<tr><td class="item_name">' +
                  (addExpand ? '<i class="fa '+this.attr.expandIconClass+'" data-expand-category="'+categoryCode+'"></i>' : '') +
-                 '<a href="#" data-area="'+area+'" data-kind="'+kind+'" data-category-code="'+categoryCode+'" data-turbolinks="false" class="js-ranking-link">'+categoryName+'</a></td></tr>';
+                 '<a href="#" data-area="'+area+'" data-kind="'+kind+'" data-category-code="'+categoryCode+'" data-turbo="false" class="js-ranking-link">'+categoryName+'</a></td></tr>';
       $(html).insertAfter(lastTr);
     };
 
@@ -225,7 +225,7 @@ function generateTargetUrl(node) {
   });
 
 
-  $(document).on('turbolinks:load', function() {
+  $(document).on('turbo:load', function() {
     window.budgetLineTree.attachTo('[data-budget-line-categories-tree]');
   });
 

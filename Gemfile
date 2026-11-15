@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem "rails", "~> 8.1.0"
 gem "sqlite3", "~> 2.9"
 gem "dartsass-sprockets"
-gem 'uglifier', '>= 1.3.0'
+gem "terser"
 gem 'redcarpet', require: true
 gem 'bcrypt'
 gem 'meta-tags'
@@ -26,9 +26,7 @@ gem "i18n-tasks"
 
 # Frontend
 gem 'jquery-rails'
-gem 'jquery-turbolinks'
 gem "bourbon"
-gem 'turbolinks'
 gem 'cookies_eu'
 gem 'flight-for-rails'
 gem "i18n-js", "~> 4.2"

@@ -19,7 +19,7 @@
     });
   });
 
-  $(document).on('turbolinks:load', function() {
+  $(document).on('turbo:load', function() {
     window.dataWidget.attachTo('[data-widget-type]');
   });
 

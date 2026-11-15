@@ -3083,9 +3083,9 @@ nav.pagination {
   }
 }
 
-html.turbolinks-progress-bar::before {
-  background-color: $color_logo_yellow !important;
-  height: 5px !important;
+.turbo-progress-bar {
+  background-color: $color_logo_yellow;
+  height: 5px;
 }
 
 @include screen(740) {
