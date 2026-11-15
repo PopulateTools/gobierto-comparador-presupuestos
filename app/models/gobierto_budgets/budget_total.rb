@@ -32,6 +32,30 @@ module GobiertoBudgets
       nil
     end
 
+    # Last year with expense budgets of the places collection, up to the last year of the comparator
+    def self.last_year(places_collection)
+      Rails.cache.fetch(["budget_total_last_year", places_collection], expires_in: 1.day) do
+        organization_ids = PlaceSet.new(places_collection:).organization_ids
+        query = {
+          size: 0,
+          query: {
+            bool: {
+              must: [
+                { terms: { organization_id: organization_ids } },
+                { term: { kind: BudgetLine::EXPENSE } },
+                { term: { type: SearchEngineConfiguration::TotalBudget.type } },
+                { range: { year: { lte: SearchEngineConfiguration::Year.last } } }
+              ]
+            }
+          },
+          aggs: { last_year: { max: { field: "year" } } }
+        }
+
+        response = SearchEngine.client.search(index: SearchEngineConfiguration::TotalBudget.index_forecast, body: query)
+        response["aggregations"]["last_year"]["value"]&.to_i || SearchEngineConfiguration::Year.last
+      end
+    end
+
     def self.budget_evolution_for(organization_id, b_or_e = BudgetTotal::BUDGETED, kind = BudgetLine::EXPENSE)
       query = {
         sort: [

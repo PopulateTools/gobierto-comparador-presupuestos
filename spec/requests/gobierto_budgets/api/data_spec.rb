@@ -47,10 +47,16 @@ RSpec.describe "Data API" do
       expect(json).to include("value" => "705.377")
     end
 
-    it "returns the debt" do
+    it "returns the debt and its position from the highest debt" do
       get "/api/data/widget/debt/madrid/2025.json"
 
-      expect(json).to include("value" => "28.555 €", "ranking_position" => 1)
+      expect(json).to include("value" => "28.555 €", "ranking_position" => 2, "ranking_total_elements" => "2")
+    end
+
+    it "ranks the highest debt first" do
+      get "/api/data/widget/debt/santander/2025.json"
+
+      expect(json).to include("value" => "755.027 €", "ranking_position" => 1)
     end
 
     it "returns a budget line amount" do
