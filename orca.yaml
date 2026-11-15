@@ -1,0 +1,8 @@
+scripts:
+  setup: |
+    cp -p $ORCA_ROOT_PATH/.rbenv-vars $ORCA_WORKTREE_PATH/.rbenv-vars && cp -p $ORCA_ROOT_PATH/.env $ORCA_WORKTREE_PATH/.env && cp -p $ORCA_ROOT_PATH/config/database.yml $ORCA_ROOT_PATH/config/secrets.yml $ORCA_WORKTREE_PATH/config/ && cp -p $ORCA_ROOT_PATH/db/development.sqlite3 $ORCA_WORKTREE_PATH/db/ && bin/update
+
+defaultTabs:
+  - title: Server
+    command: |
+      export PORT=${PORT:-3000}; bin/update && bin/rails server -p $PORT

@@ -39,7 +39,7 @@ La aplicación está escrita en Ruby y usa el framework Ruby on Rails. Para la B
 - Elastic Search
 - Pow or another subdomains tool
 
-### Prepara la base de datos y el archivo secrets.yml
+### Prepara la base de datos
 
 Una vez tengas PostgreSQL corriendo y hayas clonado este repo, haz lo siguiente en el terminal:
 
@@ -47,7 +47,6 @@ Una vez tengas PostgreSQL corriendo y hayas clonado este repo, haz lo siguiente 
 $ git clone git@github.com:PopulateTools/gobierto-comparador-presupuestos.git
 $ cd gobierto-comparador-presupuestos
 $ cp config/database.yml.example config/database.yml
-$ cp config/secrets.yml.example config/secrets.yml
 $ cp .env.example .env
 $ ln -s .env .rbenv-vars # if you use Rbenv
 $ bundle install
@@ -58,7 +57,7 @@ $ bin/rails db:setup
 
 Aquí puedes ver [cómo](https://www.elastic.co/guide/en/elasticsearch/guide/current/running-elasticsearch.html)
 
-Una vez esté corriendo, asegúrate de configurar la URL correcta para tu instancia de Elastic Search en el archivo `config/secrets.yml` bajo la clave `elastic_url`
+Una vez esté corriendo, asegúrate de configurar la URL correcta para tu instancia de Elastic Search en la variable de entorno `ELASTICSEARCH_URL` del archivo `.env`
 
 ### Carga algunos datos
 
