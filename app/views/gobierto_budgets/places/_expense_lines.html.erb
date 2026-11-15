@@ -14,4 +14,4 @@
 <%= render partial: 'gobierto_budgets/places/budget_lines',
            collection: @expense_lines[area_name]['hits'],
            as: 'budget_line',
-           locals: { total_budget: @expense_lines[area_name]['aggregations']['total_budget']['value'], kind: GobiertoBudgets::BudgetLine::EXPENSE, area_name: area_name } %>
+           locals: { total_budget: @expense_lines[area_name]['aggregations']['total_budget']['value'], kind: GobiertoBudgets::BudgetLine::EXPENSE, area_name: area_name, codes_with_children: GobiertoBudgets::BudgetLine.codes_with_children(@expense_lines[area_name]['hits'], area_name) } %>

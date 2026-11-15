@@ -77,6 +77,10 @@ module GobiertoBudgets
     end
 
     def self.budget_line_query(options, only_municipalities=false)
+      GobiertoBudgets::SearchEngine.client.search(index: GobiertoBudgets::SearchEngineConfiguration::BudgetLine.index_forecast, body: budget_line_query_body(options, only_municipalities), _source: ["population", "ine_code", "organization_id", "amount", "amount_per_inhabitant"])
+    end
+
+    def self.budget_line_query_body(options, only_municipalities=false)
       terms = [
         { term: { year: options[:year] } },
         { term: { kind: options[:kind] } },
@@ -150,9 +154,7 @@ module GobiertoBudgets
 
       query.merge!(size: options[:per_page]) if options[:per_page].present?
       query.merge!(from: options[:offset]) if options[:offset].present?
-      query.merge!(_source: false) if options[:to_rank]
-
-      GobiertoBudgets::SearchEngine.client.search(index: GobiertoBudgets::SearchEngineConfiguration::BudgetLine.index_forecast, body: query, _source: ["population", "ine_code", "organization_id", "amount", "amount_per_inhabitant"])
+      query
     end
 
     def self.find(options)
@@ -168,11 +170,16 @@ module GobiertoBudgets
       end
     end
 
-    def self.place_position_in_ranking(options, only_municipalities=false)
+    def self.place_position_in_ranking(options, value:, only_municipalities: false)
       id = %w{organization_id year code kind area_name}.map {|f| options[f.to_sym]}.join('/')
-      response = budget_line_query(options.merge(to_rank: true), only_municipalities)
-      position = response['hits']['hits'].map{ |h| h['_id'] }.index(id) + 1 rescue 0
-      return position, response['hits']['total']['value']
+      position, total_elements = GobiertoBudgets::SearchEngine.ranking_position(
+        index: GobiertoBudgets::SearchEngineConfiguration::BudgetLine.index_forecast,
+        query: budget_line_query_body(options, only_municipalities)[:query],
+        field: options[:variable],
+        id:,
+        value:
+      )
+      return position || 0, total_elements
     end
 
     def self.compare(options)
@@ -236,12 +243,14 @@ module GobiertoBudgets
       response['hits']['hits'].map{ |h| h['_source'] }
     end
 
-    def self.has_children?(options)
-      options.symbolize_keys!
-      conditions = { parent_code: options[:code], level: options[:level].to_i + 1, type: options[:area] }
-      conditions.merge! options.slice(:ine_code, :kind, :year, :organization_id).compact_blank
+    # Codes of the given budget lines that have children, with one query per level
+    def self.codes_with_children(budget_lines, area)
+      budget_lines.group_by { |budget_line| budget_line['level'].to_i }.each_with_object(Set.new) do |(level, lines), codes|
+        conditions = { level: level + 1, type: area }
+        conditions.merge! lines.first.symbolize_keys.slice(:ine_code, :kind, :year, :organization_id).compact_blank
 
-      return search(conditions)['hits'].length > 0
+        codes.merge(search(conditions)['hits'].map { |child| child['parent_code'] })
+      end
     end
 
     def self.top_differences(options)
