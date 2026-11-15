@@ -12,6 +12,31 @@ module GobiertoBudgets
     @sort_attribute ||= 'code'
     @sort_order ||= 'asc'
 
+    # Last year with expense budget lines of the places collection, up to the last year of the comparator.
+    # Some places have the total budget of a year before its budget lines are loaded, so the total is not enough.
+    def self.last_year(places_collection)
+      Rails.cache.fetch(["budget_line_last_year", places_collection], expires_in: 1.day) do
+        organization_ids = PlaceSet.new(places_collection:).organization_ids
+        query = {
+          size: 0,
+          query: {
+            bool: {
+              must: [
+                { terms: { organization_id: organization_ids } },
+                { term: { kind: EXPENSE } },
+                { term: { type: ECONOMIC } },
+                { range: { year: { lte: SearchEngineConfiguration::Year.last } } }
+              ]
+            }
+          },
+          aggs: { last_year: { max: { field: "year" } } }
+        }
+
+        response = SearchEngine.client.search(index: SearchEngineConfiguration::BudgetLine.index_forecast, body: query)
+        response["aggregations"]["last_year"]["value"]&.to_i || SearchEngineConfiguration::Year.last
+      end
+    end
+
     def self.where(conditions)
       @conditions = conditions
       self

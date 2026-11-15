@@ -1,0 +1,125 @@
+{
+ "mappings": {
+  "properties": {
+   "autonomy_id": {
+    "type": "integer"
+   },
+   "ine_code": {
+    "type": "keyword"
+   },
+   "organization_id": {
+    "type": "keyword"
+   },
+   "province_id": {
+    "type": "integer"
+   },
+   "type": {
+    "type": "keyword"
+   },
+   "value": {
+    "type": "double"
+   },
+   "year": {
+    "type": "integer"
+   }
+  }
+ },
+ "documents": [
+  {
+   "id": "28079/2024/debt",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "type": "debt",
+    "province_id": "28",
+    "autonomy_id": "13",
+    "year": 2024,
+    "value": 794354
+   }
+  },
+  {
+   "id": "28079/2024/population",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "type": "population",
+    "province_id": "28",
+    "autonomy_id": "13",
+    "year": 2024,
+    "value": 931804
+   }
+  },
+  {
+   "id": "28079/2025/debt",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "type": "debt",
+    "province_id": "28",
+    "autonomy_id": "13",
+    "year": 2025,
+    "value": 28555
+   }
+  },
+  {
+   "id": "28079/2025/population",
+   "source": {
+    "organization_id": "28079",
+    "ine_code": 28079,
+    "type": "population",
+    "province_id": "28",
+    "autonomy_id": "13",
+    "year": 2025,
+    "value": 705377
+   }
+  },
+  {
+   "id": "39075/2024/debt",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "type": "debt",
+    "province_id": "39",
+    "autonomy_id": "6",
+    "year": 2024,
+    "value": 170322
+   }
+  },
+  {
+   "id": "39075/2024/population",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "type": "population",
+    "province_id": "39",
+    "autonomy_id": "6",
+    "year": 2024,
+    "value": 379004
+   }
+  },
+  {
+   "id": "39075/2025/debt",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "type": "debt",
+    "province_id": "39",
+    "autonomy_id": "6",
+    "year": 2025,
+    "value": 755027
+   }
+  },
+  {
+   "id": "39075/2025/population",
+   "source": {
+    "organization_id": "39075",
+    "ine_code": 39075,
+    "type": "population",
+    "province_id": "39",
+    "autonomy_id": "6",
+    "year": 2025,
+    "value": 296653
+   }
+  }
+ ]
+}

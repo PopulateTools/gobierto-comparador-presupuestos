@@ -24,7 +24,7 @@ module GobiertoBudgets
         end
 
         if params[:start_year].present? && params[:start_year] != @year
-          redirect_to gobierto_budgets_place_path(current_organization.combined_slug, @year) and return
+          redirect_to location_path(current_organization.combined_slug, @year) and return
         end
       end
       load_featured_budget_line

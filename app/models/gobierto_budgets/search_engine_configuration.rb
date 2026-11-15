@@ -1,5 +1,8 @@
 module GobiertoBudgets
   class SearchEngineConfiguration
+    # The test suite loads fixtures into its own indices so it never overwrites development data
+    INDEX_PREFIX = Rails.env.test? ? "test-" : ""
+
     class Year
       def self.last; 2025 end
       def self.first; 2010 end
@@ -8,15 +11,15 @@ module GobiertoBudgets
       end
     end
     class BudgetLine
-      def self.index_forecast; 'budgets-forecast' end
-      def self.index_executed; 'budgets-execution' end
-      def self.index_forecast_updated; 'budgets-forecast-updated' end
+      def self.index_forecast; "#{INDEX_PREFIX}budgets-forecast" end
+      def self.index_executed; "#{INDEX_PREFIX}budgets-execution" end
+      def self.index_forecast_updated; "#{INDEX_PREFIX}budgets-forecast-updated" end
     end
 
     class TotalBudget
-      def self.index_forecast; 'budgets-forecast' end
-      def self.index_executed; 'budgets-execution' end
-      def self.index_forecast_updated; 'budgets-forecast-updated' end
+      def self.index_forecast; "#{INDEX_PREFIX}budgets-forecast" end
+      def self.index_executed; "#{INDEX_PREFIX}budgets-execution" end
+      def self.index_forecast_updated; "#{INDEX_PREFIX}budgets-forecast-updated" end
       def self.type; 'total-budget' end
 
       def self.all_indices
@@ -25,7 +28,7 @@ module GobiertoBudgets
     end
 
     class Data
-      def self.index; 'data' end
+      def self.index; "#{INDEX_PREFIX}data" end
       def self.type_population; 'population' end
 
       # Pending to add GobiertoBudgetsData::GobiertoBudgets::POPULATION_PROVINCE_TYPE

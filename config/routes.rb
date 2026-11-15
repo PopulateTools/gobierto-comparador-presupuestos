@@ -86,7 +86,7 @@ Rails.application.routes.draw do
     get 'categories/:slug/:year/:area/:kind' => 'search#categories', as: :search_categories
     get '/mapas/:year' => 'pages#map', as: :map
 
-    get '/budget_lines/*slug/:year/:code/:kind/:area/feedback/:question_id' => 'budget_lines#feedback', as: :budget_line_feedback, constraints: BUDGET_LINE_CONSTRAINTS
+    get "/municipios/*slug/partida/:year/:code/:kind/:area/feedback/:question_id" => "budget_lines#feedback", as: :budget_line_feedback, constraints: BUDGET_LINE_CONSTRAINTS, defaults: { places_collection: "ine" }
 
     # municipalities
     get "/municipios/*slug/partida/:year/:code/:kind/:area" => "budget_lines#show", as: :budget_line, constraints: BUDGET_LINE_CONSTRAINTS, defaults: { places_collection: "ine" }

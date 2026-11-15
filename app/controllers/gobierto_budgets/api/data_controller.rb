@@ -428,7 +428,6 @@ module GobiertoBudgets
       def budgets
         year = params[:year].to_i
         kind = params[:kind]
-        place = INE::Places::Place.find params[:ine_code]
         area_name = params[:area]
 
         query = {
@@ -439,7 +438,7 @@ module GobiertoBudgets
             bool: {
               must: [
                 {term: { year: year }},
-                {term: { ine_code: place.id }},
+                {term: { organization_id: current_organization.id }},
                 {term: { kind: kind }},
                 {term: { type: area_name }}
               ]
@@ -505,33 +504,25 @@ module GobiertoBudgets
           terms << {terms: { organization_id: organizations_ids.compact }} if organizations_ids.any?
         end
 
-        query = {
-          query: {
-            bool: {
-              must: terms
-            }
-          },
-          size: 10_000,
-          _source: false
-        }
-
-        value = nil
         begin
-          response = GobiertoBudgets::SearchEngine.client.search index: GobiertoBudgets::SearchEngineConfiguration::Data.index, body: query
-          debts = response['hits']['hits'].map{|h| h['_id']}
-          position = debts.index(id) + 1 rescue 0
-
           value = GobiertoBudgets::SearchEngine.client.get index: GobiertoBudgets::SearchEngineConfiguration::Data.index, id: id
           value = value['_source']['value']
         rescue Elasticsearch::Transport::Transport::Errors::NotFound
-          debts = []
-          position = nil
+          return { value: nil, position: nil, total_elements: 0 }
         end
+
+        position, total_elements = GobiertoBudgets::SearchEngine.ranking_position(
+          index: GobiertoBudgets::SearchEngineConfiguration::Data.index,
+          query: { bool: { must: terms } },
+          field: :value,
+          id:,
+          value:
+        )
 
         return {
           value: value,
-          position: position,
-          total_elements: debts.length
+          position: position || 0,
+          total_elements: total_elements
         }
       end
 
@@ -635,8 +626,8 @@ module GobiertoBudgets
 
         response_budgeted.map do |budgeted_result|
           year = budgeted_result['year']
-          total_budgeted = budgeted_result['total_budget']
-          total_executed = response_executed.select {|te| te['year'] == year }.first.try(:[],'total_budget')
+          total_budgeted = budgeted_result['amount']
+          total_executed = response_executed.select {|te| te['year'] == year }.first.try(:[],'amount')
           next unless total_executed.present?
 
           deviation = delta_percentage(total_executed, total_budgeted)
