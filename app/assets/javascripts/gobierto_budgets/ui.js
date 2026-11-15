@@ -15,7 +15,7 @@ function responsive() {
   return false;
 }
 
-$(document).on('turbolinks:load', function() {
+$(document).on('turbo:load', function() {
   // $('.spinner').hide();
   // Turbolinks.enableProgressBar();
 
@@ -364,7 +364,7 @@ $(document).on('turbolinks:load', function() {
       visLineasJ.measure = $widget.data('line-widget-type');
       visLineasJ.render($(this).data('line-widget-url'));
     } else if($(this).data('page-href') !== undefined) {
-      Turbolinks.visit($(this).data('page-href'));
+      Turbo.visit($(this).data('page-href'));
     } else {
       return false;
     }

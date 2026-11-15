@@ -137,7 +137,7 @@
     }
   });
 
-  $(document).on('turbolinks:load', function() {
+  $(document).on('turbo:load', function() {
     window.intelligenceBudgetLinesMeans.attachTo('[data-intelligence-budget-lines-means]');
   });
 

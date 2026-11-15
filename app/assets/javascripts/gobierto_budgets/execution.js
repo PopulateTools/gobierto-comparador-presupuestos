@@ -1,4 +1,4 @@
-$(document).on('turbolinks:load', function() {
+$(document).on('turbo:load', function() {
   'use strict';
 
   $('.execution_vs_budget_table tr:nth-of-type(n+6)').hide()

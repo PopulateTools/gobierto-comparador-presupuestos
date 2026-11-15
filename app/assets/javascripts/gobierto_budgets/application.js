@@ -1,7 +1,7 @@
-//= require jquery
-//= require jquery.turbolinks
+//= require jquery3
 //= require jquery_ujs
-//= require turbolinks
+//= require turbo
+//= require i18n
 //= require i18n/translations
 //= require velocity.min
 //= require velocity.ui.min
@@ -45,7 +45,11 @@
 //= require gobierto_budgets/table
 //= require_directory ../components/
 
-$(document).on('turbolinks:load', function() {
+// Turbo Drive only handles links: forms submit with full page loads, so the
+// controllers can keep rendering validation errors with a 200 status.
+Turbo.config.forms.mode = "off";
+
+$(document).on('turbo:load', function() {
   addScrollToLinksBehavior();
 });
 

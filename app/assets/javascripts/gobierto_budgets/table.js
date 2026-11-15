@@ -1,4 +1,4 @@
-$(document).on('turbolinks:load', function() {
+$(document).on('turbo:load', function() {
   $('.js-table-rows-toggle').on('click', function (e) {
     e.stopPropagation();
 

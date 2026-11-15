@@ -9,7 +9,7 @@
                 t('common.economic'),
                 locations_ranking_path(@year, @kind, 'economic', @variable, ine_code: params[:ine_code], f: params[:f]),
                 class: "#{'buttonSelected' if @area_name == 'economic'} js-ranking-link",
-                data: { turbolinks: false },
+                data: { turbo: false },
                 id: 'Economica'
               ) %>
         </li>
@@ -18,7 +18,7 @@
                 t('common.functional'),
                 locations_ranking_path(@year, @kind, 'functional', @variable, ine_code: params[:ine_code], f: params[:f]),
                 class: "#{'buttonSelected' if @area_name == 'functional'} js-ranking-link",
-                data: { turbolinks: false },
+                data: { turbo: false },
                 id: 'Funcional'
               ) %>
         </li>
@@ -60,13 +60,13 @@
                       kind_literal(@kind).capitalize,
                       locations_ranking_path(@year, @kind, @area_name, @variable, ine_code: params[:ine_code], f: params[:f]),
                       class: 'js-ranking-link',
-                      data: { turbolinks: false }
+                      data: { turbo: false }
                   ) %></li>
             <li><%= link_to(
                       kind_literal(other_kind(@kind)).capitalize,
                       locations_ranking_path(@year, other_kind(@kind), @area_name, @variable, ine_code: params[:ine_code], f: params[:f]),
                       class: 'js-ranking-link',
-                      data: { turbolinks: false }
+                      data: { turbo: false }
                     ) %></li>
           </ul>
         </div>
@@ -98,7 +98,7 @@
                         budget_line_denomination(@area_name, code, @kind),
                         locations_ranking_path(@year, @kind, @area_name, @variable, code, ine_code: params[:ine_code], f: params[:f]),
                         class: 'js-ranking-link',
-                        data: { turbolinks: false }
+                        data: { turbo: false }
                       ) %>
                 </li>
               <% end %>

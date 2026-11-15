@@ -101,7 +101,7 @@
     };
   });
 
-  $(document).on('turbolinks:load', function() {
+  $(document).on('turbo:load', function() {
     window.shareContent.attachTo('[data-share]');
   });
 

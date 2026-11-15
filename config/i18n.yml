@@ -1,0 +1,10 @@
+translations:
+  - file: tmp/i18n-js/translations.json
+    patterns:
+      - "*"
+
+export_files:
+  enabled: true
+  files:
+    - template: config/i18n-js/translations.js.erb
+      output: app/assets/javascripts/i18n/translations.js

@@ -50,9 +50,13 @@ module GobiertoBudgetsComparator
 
     config.action_controller.page_cache_directory = Rails.root.join("public", "cache")
 
+    # The stylesheets (and bourbon) still use @import and global Sass functions,
+    # which Dart Sass deprecates until they move to the module system.
+    config.sass.silence_deprecations = %w[import global-builtin color-functions if-function]
+
 
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 7.0
+    config.load_defaults 8.1
 
     # Configuration for the application, engines, and railties goes here.
     #

@@ -4,8 +4,8 @@
   <% set_meta_tags twitter: { :site => Settings.twitter_account} %>
   <%= display_meta_tags site: 'Gobierto Presupuestos Municipales', reverse: true %>
 
-  <%= stylesheet_link_tag    'gobierto_budgets/application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'gobierto_budgets/application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'gobierto_budgets/application', media: 'all', 'data-turbo-track' => 'reload' %>
+  <%= javascript_include_tag 'gobierto_budgets/application', 'data-turbo-track' => 'reload' %>
   <%= csrf_meta_tags %>
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />

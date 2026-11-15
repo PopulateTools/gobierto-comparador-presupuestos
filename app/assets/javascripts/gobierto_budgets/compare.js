@@ -1,4 +1,4 @@
-$(document).on('turbolinks:load', function() {
+$(document).on('turbo:load', function() {
   'use strict';
 
   var placesFile = window.placesFile || '/places.json';

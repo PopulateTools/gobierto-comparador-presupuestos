@@ -2,7 +2,7 @@ $('#ranking-table').replaceWith("<%= j(render partial: 'gobierto_budgets/places/
 $('#pagination').html("<%= j(paginate @ranking_items, remote: true) %>");
 
 function updatePageUrl() {
-  history.pushState({ turbolinks: {} }, '', "<%= request.url %>");
+  history.pushState({ turbo: {} }, '', "<%= request.url %>");
 }
 
 function updateDataEndpointPath() {
