@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   include UserSession
 
-  has_secure_password validations: false
+  has_secure_password validations: false, reset_token: false
 
   attr_accessor :remember_token
 
