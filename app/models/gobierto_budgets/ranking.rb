@@ -72,13 +72,14 @@ module GobiertoBudgets
 
       return results.map do |h|
         id = h["organization_id"]
+        totals = total_results.fetch(id.to_s, {})
 
         Item.new({
           place: GobiertoBudgetsData::GobiertoBudgets::PlaceDecorator.find(id, places_collection: places_collection),
           population: h["value"],
-          amount_per_inhabitant: total_results[id][:total_budget_per_inhabitant],
-          amount: total_results[id.to_s][:total_budget],
-          total: total_results[id.to_s][:total_budget]
+          amount_per_inhabitant: totals[:total_budget_per_inhabitant],
+          amount: totals[:total_budget],
+          total: totals[:total_budget]
         })
       end, total_elements
     end
