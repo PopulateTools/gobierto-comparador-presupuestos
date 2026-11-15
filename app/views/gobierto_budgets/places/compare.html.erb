@@ -125,8 +125,8 @@
               <% total_line = @totals.select { |tl| tl["organization_id"].to_s == place.id.to_s }.first || {} %>
               <% population = @population.select { |tl| tl["organization_id"].to_s == place.id.to_s }.first || {} %>
               <ul>
-                <li class='total-budget'><%= number_to_currency total_line['total_budget'], precision: 0 %></li>
-                <li class='per-person'><%= number_to_currency total_line['total_budget_per_inhabitant'], precision: 0 %></li>
+                <li class='total-budget'><%= number_to_currency total_line['amount'], precision: 0 %></li>
+                <li class='per-person'><%= number_to_currency total_line['amount_per_inhabitant'], precision: 0 %></li>
                 <li><%= number_with_precision population['value'], precision: 0, delimiter: '.' %></li>
               </ul>
             </td>

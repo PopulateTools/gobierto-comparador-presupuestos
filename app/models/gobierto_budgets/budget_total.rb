@@ -21,14 +21,13 @@ module GobiertoBudgets
     end
 
     def self.for(organization_id, year, b_or_e = BudgetTotal::BUDGETED, kind = BudgetLine::EXPENSE)
-      return for_places(organization_id, year) if organization_id.is_a?(Array)
+      return for_places(organization_id, year, kind) if organization_id.is_a?(Array)
 
       index = (b_or_e == BudgetTotal::EXECUTED) ? SearchEngineConfiguration::TotalBudget.index_executed : SearchEngineConfiguration::TotalBudget.index_forecast
-      type = SearchEngineConfiguration::TotalBudget.type
-      id = [organization_id, year, kind].join("/")
+      id = [organization_id, year, kind, SearchEngineConfiguration::TotalBudget.type].join("/")
 
-      result = SearchEngine.client.get(index: index, type: type, id: id)
-      result["_source"]["total_budget"].to_f
+      result = SearchEngine.client.get(index: index, id: id)
+      result["_source"]["amount"].to_f
     rescue ::Elasticsearch::Transport::Transport::Errors::NotFound => e
       nil
     end
@@ -56,10 +55,11 @@ module GobiertoBudgets
       response['hits']['hits'].map{ |h| h['_source'] }
     end
 
-    def self.for_places(organizations_ids, year)
+    def self.for_places(organizations_ids, year, kind = BudgetLine::EXPENSE)
       terms = [
         { terms: { organization_id: organizations_ids } },
         { term: { year: year } },
+        { term: { kind: kind } },
         { term: { type: SearchEngineConfiguration::TotalBudget.type } }
       ]
 
@@ -130,11 +130,11 @@ module GobiertoBudgets
       append_organization_ids(terms, places_restriction.organization_ids)
 
       if (total_filter && (total_filter[:from].to_i > BudgetTotal::TOTAL_FILTER_MIN || total_filter[:to].to_i < BudgetTotal::TOTAL_FILTER_MAX))
-        terms << {range: { total_budget: { gte: total_filter[:from].to_i, lte: total_filter[:to].to_i} }}
+        terms << {range: { amount: { gte: total_filter[:from].to_i, lte: total_filter[:to].to_i} }}
       end
 
       if (per_inhabitant_filter && (per_inhabitant_filter[:from].to_i > BudgetTotal::PER_INHABITANT_FILTER_MIN || per_inhabitant_filter[:to].to_i < BudgetTotal::PER_INHABITANT_FILTER_MAX))
-        terms << {range: { total_budget_per_inhabitant: { gte: per_inhabitant_filter[:from].to_i, lte: per_inhabitant_filter[:to].to_i} }}
+        terms << {range: { amount_per_inhabitant: { gte: per_inhabitant_filter[:from].to_i, lte: per_inhabitant_filter[:to].to_i} }}
       end
 
       terms << {term: { autonomy_id: aarr_filter }} unless aarr_filter.blank?

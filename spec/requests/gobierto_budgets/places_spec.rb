@@ -12,7 +12,7 @@ RSpec.describe "Places" do
       get "/municipios/madrid/2024"
 
       expect(response).to have_http_status(:ok)
-      expect(response.body).to include("Madrid")
+      expect(response.body).to include("Madrid", 'data-place="Madrid|/municipios/madrid/2024|madrid"')
     end
 
     it "renders a year without data" do
@@ -73,11 +73,18 @@ RSpec.describe "Places" do
   end
 
   describe "compare" do
-    it "compares the first level of several municipalities" do
-      get "/compara/municipios/madrid:santander/2024/G/functional"
+    it "compares the expenses of several municipalities" do
+      get "/compara/municipios/madrid:santander/2025/G/functional"
 
       expect(response).to have_http_status(:ok)
-      expect(response.body).to include("Madrid", "Santander")
+      expect(response.body).to include("Madrid", "Santander", "578.006 €", "37.175 €")
+    end
+
+    it "compares the income of several municipalities" do
+      get "/compara/municipios/madrid:santander/2025/I/economic"
+
+      expect(response).to have_http_status(:ok)
+      expect(response.body).to include("925.335 €", "494.206 €")
     end
 
     it "compares a budget line of several municipalities" do
@@ -113,8 +120,40 @@ RSpec.describe "Places" do
       get "/ranking/municipios/2024/G/functional/amount", params: { f: { population: { from: 800_000, to: 1_000_000 } } }
 
       expect(response).to have_http_status(:ok)
-      expect(response.body).to include("Madrid")
-      expect(response.body).not_to include("Santander")
+      expect(response.body).to include("place_28079")
+      expect(response.body).not_to include("place_39075")
+    end
+
+    it "filters the ranking by total budget" do
+      get "/ranking/municipios/2025/G/functional/amount", params: { f: { total: { from: 500_000, to: 600_000 } } }
+
+      expect(response.body).to include("place_28079")
+      expect(response.body).not_to include("place_39075")
+    end
+
+    it "filters the ranking by budget per inhabitant" do
+      get "/ranking/municipios/2025/G/functional/amount", params: { f: { per_inhabitant: { from: 900_000, to: 1_000_000 } } }
+
+      expect(response.body).to include("place_39075")
+      expect(response.body).not_to include("place_28079")
+    end
+
+    it "shows the budget line percentage over the expenses total in a budget line ranking" do
+      get "/ranking/municipios/2025/G/functional/amount/1"
+
+      expect(response.body).to include("79,85%")
+    end
+
+    it "links each ranked municipality to its page for the comparator" do
+      get "/ranking/municipios/2025/G/functional/amount/1"
+
+      expect(response.body).to include('data-place="Madrid|/municipios/madrid/2025|madrid"')
+    end
+
+    it "shows the total budget of each municipality in the population ranking" do
+      get "/ranking/municipios/2025/population"
+
+      expect(response.body).to include("578.006 €")
     end
 
     it "returns not found for an unknown variable" do

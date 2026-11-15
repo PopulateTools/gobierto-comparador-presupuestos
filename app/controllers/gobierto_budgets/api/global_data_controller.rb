@@ -111,12 +111,12 @@ module GobiertoBudgets
 
       def total_budget_execution
         year = params[:year].to_i
-        total_budget_data_planned = total_budget_data(year, 'total_budget')
-        total_budget_data_executed = total_budget_data_executed(year, 'total_budget')
+        total_budget_data_planned = total_budget_data(year, 'amount')
+        total_budget_data_executed = total_budget_data_executed(year, 'amount')
         if total_budget_data_executed.nil? || total_budget_data_planned.nil?
           year -= 1
-          total_budget_data_planned = total_budget_data(year, 'total_budget')
-          total_budget_data_executed = total_budget_data_executed(year, 'total_budget')
+          total_budget_data_planned = total_budget_data(year, 'amount')
+          total_budget_data_executed = total_budget_data_executed(year, 'amount')
         end
         diff = total_budget_data_executed - total_budget_data_planned rescue ""
         sign = sign(total_budget_data_executed, total_budget_data_planned)

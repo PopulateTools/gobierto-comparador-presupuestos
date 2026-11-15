@@ -276,7 +276,7 @@ module GobiertoBudgets
     end
 
     def compare_slug(place, year)
-      "#{place.name}|#{gobierto_budgets_place_path(place, year)}|#{place.slug}"
+      "#{place.name}|#{location_path(place.slug, year)}|#{place.slug}"
     end
 
     def place_name(organization_id, places_collection: :ine)

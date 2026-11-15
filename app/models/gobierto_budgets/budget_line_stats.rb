@@ -72,7 +72,7 @@ module GobiertoBudgets
     private
 
     def total_budget
-      total_budget_planned_query(@year, 'total_budget')
+      total_budget_planned_query(@year, 'amount')
     end
 
     def budget_line_planned_query(year, attribute)

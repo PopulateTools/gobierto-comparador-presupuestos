@@ -98,7 +98,7 @@ module GobiertoBudgets
 
         budget_filters.merge!(aarr: aarr_filter) if aarr_filter
 
-        results, total_elements = BudgetTotal.for_ranking(options[:year], 'total_budget', GobiertoBudgets::BudgetLine::EXPENSE, 0, nil, options[:places_collection], budget_filters)
+        results, total_elements = BudgetTotal.for_ranking(options[:year], 'amount', GobiertoBudgets::BudgetLine::EXPENSE, 0, nil, options[:places_collection], budget_filters)
         ine_codes = results.map{ |p| p["ine_code"] }.compact_blank
         organization_ids = results.map{ |p| p["organization_id"] }.compact_blank
         append_ine_codes(terms, ine_codes)

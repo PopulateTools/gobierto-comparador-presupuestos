@@ -93,7 +93,7 @@ module GobiertoBudgets
       redirect_to locations_compare_path if @places.empty?
 
       ids = @places.map(&:id)
-      @totals = GobiertoBudgets::BudgetTotal.for ids, @year
+      @totals = GobiertoBudgets::BudgetTotal.for ids, @year, GobiertoBudgets::BudgetTotal::BUDGETED, @kind
       @population = GobiertoBudgets::Population.for ids, @year, @places_collection
       if @population.empty?
         @population = GobiertoBudgets::Population.for ids, @year - 1, @places_collection
