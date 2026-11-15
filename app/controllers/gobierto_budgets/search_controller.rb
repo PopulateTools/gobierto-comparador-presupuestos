@@ -21,7 +21,7 @@ module GobiertoBudgets
       this_year_codes = get_year_codes(place, area, kind, year)
 
       klass_name = params[:area] == 'economic' ? EconomicArea : FunctionalArea
-      query = params[:query].downcase
+      query = params.require(:query).downcase
       suggestions = klass_name.all_items[params[:kind]].select{|k,v| this_year_codes.include?(k) && v.downcase.include?(query) }
 
       respond_to do |format|
