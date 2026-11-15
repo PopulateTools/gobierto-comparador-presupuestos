@@ -51,7 +51,7 @@ gem 'rack-rewrite', '~> 1.5.0'
 # Standard library gems no longer bundled with Ruby
 gem "csv"
 
-gem 'puma', '~> 7.2'
+gem 'puma', '~> 8.1'
 
 group :development, :test do
   gem "byebug", platform: :mri

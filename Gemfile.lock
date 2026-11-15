@@ -290,7 +290,7 @@ GEM
     prettyprint (0.2.1)
     prism (2.1.0-arm64-darwin)
     prism (2.1.0-x86_64-linux-gnu)
-    puma (7.2.2)
+    puma (8.1.1)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (2.2.25)
@@ -482,7 +482,7 @@ DEPENDENCIES
   meta-tags
   nokogiri (~> 1.19)
   oj
-  puma (~> 7.2)
+  puma (~> 8.1)
   rack-rewrite (~> 1.5.0)
   rails (~> 8.1.0)
   rb-readline
