@@ -1,4 +1,4 @@
-//= require jquery
+//= require jquery3
 //= require jquery_ujs
 //= require turbo
 //= require i18n
