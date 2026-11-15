@@ -24,9 +24,6 @@ gem "bootsnap"
 gem 'sprockets', '~> 3.7.2'
 gem "i18n-tasks"
 
-# Socrata integration
-gem 'soda-ruby', '~> 0.2.24', require: 'soda'
-
 # Frontend
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
