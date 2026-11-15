@@ -573,32 +573,7 @@ module GobiertoBudgets
                             end
         terms << { terms: { organization_id: organizations_ids.compact } } if organizations_ids.present?
 
-        body = {
-          sort: [
-            { field.to_sym => { order: 'desc' } }
-          ],
-          query: {
-            bool: {
-              must: terms
-            }
-          },
-          size: 10_000,
-          _source: false
-        }
-
         id = "#{current_organization.id}/#{year}/#{BudgetLine::EXPENSE}/#{GobiertoBudgets::SearchEngineConfiguration::TotalBudget.type}"
-
-        if ranking
-          response = GobiertoBudgets::SearchEngine.client.search(
-            index: GobiertoBudgets::SearchEngineConfiguration::TotalBudget.index_forecast,
-            body: body
-          )
-          buckets = response['hits']['hits'].map{|h| h['_id']}
-          position = buckets.index(id) + 1 rescue 0
-        else
-          buckets = []
-          position = 0
-        end
 
         begin
           value = GobiertoBudgets::SearchEngine.client.get(
@@ -610,10 +585,20 @@ module GobiertoBudgets
           value = 0
         end
 
+        if ranking
+          position, total_elements = GobiertoBudgets::SearchEngine.ranking_position(
+            index: GobiertoBudgets::SearchEngineConfiguration::TotalBudget.index_forecast,
+            query: { bool: { must: terms } },
+            field:,
+            id:,
+            value:
+          )
+        end
+
         return {
           value: value,
-          position: position,
-          total_elements: buckets.length
+          position: position || 0,
+          total_elements: total_elements || 0
         }
       end
 

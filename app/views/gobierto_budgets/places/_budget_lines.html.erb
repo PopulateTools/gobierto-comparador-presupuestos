@@ -1,6 +1,6 @@
 <tr id="code_<%= budget_line['code'] %>_<%= area_name %>_<%= kind %>">
   <td class="item_name">
-    <% if GobiertoBudgets::BudgetLine.has_children?(budget_line.merge(area: area_name)) %>
+    <% if codes_with_children.include?(budget_line['code']) %>
       <%= link_to '<i class="fa fa-plus-square-o"></i>'.html_safe,
             location_budget_path(current_organization.combined_slug, budget_line['year'], budget_line['kind'], area_name, budget_line['code']), remote: true %>
     <% else %>

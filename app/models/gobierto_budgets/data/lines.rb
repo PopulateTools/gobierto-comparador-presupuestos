@@ -72,7 +72,7 @@ module GobiertoBudgets
               must: filters
             }
           },
-          size: 10_000,
+          size: 0,
           "aggs": {
             "#{@variable}_per_year": {
               "terms": {
