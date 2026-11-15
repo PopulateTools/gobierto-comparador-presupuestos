@@ -11,3 +11,14 @@ var AUTOCOMPLETE_DEFAULTS = function(){
     tabDisabled: true
   };
 };
+
+// Places files are big: each page downloads and parses each one once
+var placesRequests = {};
+var loadPlaces = function(placesFile){
+  if (!placesRequests[placesFile]) {
+    placesRequests[placesFile] = $.getJSON(placesFile).fail(function(){
+      delete placesRequests[placesFile];
+    });
+  }
+  return placesRequests[placesFile];
+};
