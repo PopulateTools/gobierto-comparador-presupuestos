@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem "rails", "~> 8.1.0"
 gem "sqlite3", "~> 2.9"
-gem 'sass-rails', '~> 5.0.0'
+gem "dartsass-sprockets"
 gem 'uglifier', '>= 1.3.0'
 gem 'redcarpet', require: true
 gem 'bcrypt'
@@ -21,7 +21,7 @@ gem 'nokogiri', '~> 1.19'
 gem 'json', '~> 2.1'
 gem "gobierto_budgets_data", git: "https://github.com/PopulateTools/gobierto_budgets_data.git"
 gem "bootsnap"
-gem 'sprockets', '~> 3.7.2'
+gem "sprockets", "~> 4.2"
 gem "i18n-tasks"
 
 # Frontend
