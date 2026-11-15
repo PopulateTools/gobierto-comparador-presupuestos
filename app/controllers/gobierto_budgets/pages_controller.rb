@@ -25,7 +25,7 @@ module GobiertoBudgets
       ]
     }.freeze
 
-    caches_action :home, :ranking, :deputations_ranking, cache_path: ->(c) { { locale: I18n.locale} }
+    caches_action :home, :ranking, :deputations_ranking, cache_path: ->(c) { { locale: I18n.locale, places_collection: c.send(:places_collection_key) } }
     helper_method :search_examples, :compare_examples
 
     def home
