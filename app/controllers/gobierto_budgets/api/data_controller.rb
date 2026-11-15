@@ -428,7 +428,6 @@ module GobiertoBudgets
       def budgets
         year = params[:year].to_i
         kind = params[:kind]
-        place = INE::Places::Place.find params[:ine_code]
         area_name = params[:area]
 
         query = {
@@ -439,7 +438,7 @@ module GobiertoBudgets
             bool: {
               must: [
                 {term: { year: year }},
-                {term: { ine_code: place.id }},
+                {term: { organization_id: current_organization.id }},
                 {term: { kind: kind }},
                 {term: { type: area_name }}
               ]
@@ -635,8 +634,8 @@ module GobiertoBudgets
 
         response_budgeted.map do |budgeted_result|
           year = budgeted_result['year']
-          total_budgeted = budgeted_result['total_budget']
-          total_executed = response_executed.select {|te| te['year'] == year }.first.try(:[],'total_budget')
+          total_budgeted = budgeted_result['amount']
+          total_executed = response_executed.select {|te| te['year'] == year }.first.try(:[],'amount')
           next unless total_executed.present?
 
           deviation = delta_percentage(total_executed, total_budgeted)

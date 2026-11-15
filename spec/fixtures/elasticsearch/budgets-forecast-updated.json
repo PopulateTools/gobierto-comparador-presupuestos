@@ -1,0 +1,52 @@
+{
+ "mappings": {
+  "properties": {
+   "amount": {
+    "type": "double"
+   },
+   "amount_per_inhabitant": {
+    "type": "double"
+   },
+   "autonomy_id": {
+    "type": "integer"
+   },
+   "code": {
+    "type": "keyword"
+   },
+   "custom_code": {
+    "type": "keyword"
+   },
+   "functional_code": {
+    "type": "keyword"
+   },
+   "ine_code": {
+    "type": "integer"
+   },
+   "kind": {
+    "type": "keyword"
+   },
+   "level": {
+    "type": "integer"
+   },
+   "organization_id": {
+    "type": "keyword"
+   },
+   "parent_code": {
+    "type": "keyword"
+   },
+   "population": {
+    "type": "long"
+   },
+   "province_id": {
+    "type": "integer"
+   },
+   "type": {
+    "type": "keyword"
+   },
+   "year": {
+    "type": "integer"
+   }
+  }
+ },
+ "documents": []
+}

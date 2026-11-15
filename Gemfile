@@ -48,26 +48,18 @@ gem "lograge"
 # Redirections
 gem 'rack-rewrite', '~> 1.5.0'
 
-# Ruby requirements
-gem "stringio", "3.1.1"
+# Standard library gems no longer bundled with Ruby
+gem "csv"
 
 gem 'puma', '~> 7.2'
 
 group :development, :test do
   gem "byebug", platform: :mri
-  gem "spring"
-  gem "spring-watcher-listen", "~> 2.0.0"
   gem "rb-readline"
 end
 
 group :test do
-  gem 'database_cleaner'
   gem 'rspec-rails', '~> 6.1'
-  gem 'capybara'
-  gem 'launchy'
-  gem 'email_spec'
-  gem 'selenium-webdriver'
-  gem 'rack-test', require: "rack/test"
 end
 
 group :development do

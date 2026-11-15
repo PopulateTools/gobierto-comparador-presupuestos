@@ -47,8 +47,8 @@ module GobiertoBudgets
 
       places_collection = options[:places_collection]
       organization_ids = results.map { |h| h["organization_id"] }
-      total_results = BudgetTotal.for_places(organization_ids, options[:year])
-      total_results = Hash[total_results.map{ |i| [i["organization_id"].to_s, i["total_budget"]]}]
+      total_results = BudgetTotal.for_places(organization_ids, options[:year], options[:kind])
+      total_results = Hash[total_results.map{ |i| [i["organization_id"].to_s, i["amount"]]}]
 
       return results.map do |h|
         id = h["organization_id"]
@@ -68,7 +68,7 @@ module GobiertoBudgets
 
       organization_ids = results.map { |h| h["organization_id"] }
       total_results = BudgetTotal.for_places(organization_ids, year)
-      total_results = Hash[total_results.map{ |i| [i["organization_id"].to_s, {total_budget: i["total_budget"], total_budget_per_inhabitant: i["total_budget_per_inhabitant"]}]}]
+      total_results = Hash[total_results.map{ |i| [i["organization_id"].to_s, {total_budget: i["amount"], total_budget_per_inhabitant: i["amount_per_inhabitant"]}]}]
 
       return results.map do |h|
         id = h["organization_id"]
