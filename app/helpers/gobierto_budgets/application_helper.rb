@@ -276,7 +276,8 @@ module GobiertoBudgets
     end
 
     def compare_slug(place, year)
-      "#{place.name}|#{location_path(place.slug, year)}|#{place.slug}"
+      place_slug = place.respond_to?(:combined_slug) ? place.combined_slug : place.slug
+      "#{place.name}|#{location_path(place_slug, year)}|#{place.slug}"
     end
 
     def place_name(organization_id, places_collection: :ine)
