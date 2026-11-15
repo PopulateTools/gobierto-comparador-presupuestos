@@ -42,22 +42,24 @@ RSpec.describe "Pages" do
     expect(response.body).to include("/api/data/widget/ranking/deputation_eu/2025/I/economic/amount/391.json")
   end
 
-  context "when the deputations budgets end before the last year" do
+  context "when the deputations budget lines end before the last year" do
     let(:client) { GobiertoBudgets::SearchEngine.client }
-    let(:index) { GobiertoBudgets::SearchEngineConfiguration::TotalBudget.index_forecast }
-    let(:document_id) { "48000DD000/2023/G/total-budget" }
+    let(:index) { GobiertoBudgets::SearchEngineConfiguration::BudgetLine.index_forecast }
+    let(:documents) do
+      {
+        "48000DD000/2023/1/G/economic" => { year: 2023, kind: "G", type: "economic", code: "1", level: 1, amount: 1_000_000 },
+        "48000DD000/2024/G/total-budget" => { year: 2024, kind: "G", type: "total-budget", amount: 1_000_000 }
+      }
+    end
 
     before do
-      client.index(
-        index:,
-        id: document_id,
-        refresh: true,
-        body: { organization_id: "48000DD000", year: 2023, kind: "G", type: "total-budget", amount: 1_000_000, amount_per_inhabitant: 1_000 }
-      )
+      documents.each do |id, body|
+        client.index(index:, id:, refresh: true, body: body.merge(organization_id: "48000DD000"))
+      end
     end
 
     after do
-      client.delete(index:, id: document_id, refresh: true)
+      documents.each_key { |id| client.delete(index:, id:, refresh: true) }
     end
 
     it "links the deputations ranking page to the last year with budgets" do
