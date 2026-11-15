@@ -14,9 +14,8 @@
 //= require gobierto_budgets/vendor/js.cookie
 //= require mustache.min
 //= require flight-for-rails
-//= require d3.min
-//= require d3-legend.min
 //= require d3-jetpack
+//= require d3-legend.min
 //= require topojson-client.min
 //= require slimselect.min
 //= require chroma.min
