@@ -218,7 +218,7 @@ module GobiertoBudgets
 
       if ranking
         opts = { year: year, code: code, kind: kind, area_name: area, variable: field, place: current_organization&.place, organization_id: current_organization.id, places_collection: options[:places_collection] }
-        position, total_elements = BudgetLine.place_position_in_ranking(opts)
+        position, total_elements = BudgetLine.place_position_in_ranking(opts, value:)
       end
 
       return {

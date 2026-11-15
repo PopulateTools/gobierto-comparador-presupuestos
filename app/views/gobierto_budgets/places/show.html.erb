@@ -122,7 +122,7 @@
       <%= render partial: 'gobierto_budgets/places/budget_lines',
                   collection: @income_lines['hits'],
                   as: 'budget_line',
-                  locals: { total_budget: @income_lines['aggregations']['total_budget']['value'], kind: GobiertoBudgets::BudgetLine::INCOME, area_name: 'economic' } %>
+                  locals: { total_budget: @income_lines['aggregations']['total_budget']['value'], kind: GobiertoBudgets::BudgetLine::INCOME, area_name: 'economic', codes_with_children: GobiertoBudgets::BudgetLine.codes_with_children(@income_lines['hits'], 'economic') } %>
       </table>
     </div>
   </div>
