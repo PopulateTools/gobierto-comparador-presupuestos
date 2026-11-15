@@ -41,6 +41,15 @@ module GobiertoBudgets
       @variable == 'population'
     end
 
+    # The population ranking route has no kind nor area segments
+    def ranking_filters_path
+      if params[:kind].blank?
+        locations_population_ranking_path(@year)
+      else
+        locations_ranking_path(params.except(:f, :page, :offset))
+      end
+    end
+
     def amount_per_inhabitant?
       @variable == 'amount_per_inhabitant'
     end

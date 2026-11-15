@@ -74,7 +74,7 @@ module GobiertoBudgetsComparator
       r301 %r{\A\/compare\/(.+)}, "/compara/municipios/$1"
       r301 "/compare-new", "/compara/municipios/nueva"
       r301 %r{\A/ranking\z}, "/ranking/municipios"
-      r301 %r{\A\/ranking\/((?!municipios).*)}, "/ranking/municipios/$1"
+      r301 %r{\A\/ranking\/((?!municipios|diputaciones).*)}, "/ranking/municipios/$1"
     end
   end
 end
