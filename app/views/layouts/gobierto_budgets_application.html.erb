@@ -4,8 +4,8 @@
   <% set_meta_tags twitter: { :site => Settings.twitter_account} %>
   <%= display_meta_tags site: t('.site_title'), reverse: true %>
 
-  <%= stylesheet_link_tag    'gobierto_budgets/application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'gobierto_budgets/application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'gobierto_budgets/application', media: 'all', 'data-turbo-track' => 'reload' %>
+  <%= javascript_include_tag 'gobierto_budgets/application', 'data-turbo-track' => 'reload' %>
   <%= csrf_meta_tags %>
 
   <%= yield :header %>
@@ -121,7 +121,7 @@
   <div class="main_content clearfix">
     <%= yield %>
 
-    <a href="#" class="back-to-top" data-turbolinks="false"><%= t('.back_to_top') %> ↑</a>
+    <a href="#" class="back-to-top" data-turbo="false"><%= t('.back_to_top') %> ↑</a>
   </div>
 
 </div>

@@ -1,6 +1,6 @@
 'use strict';
 
-$(document).on('turbolinks:load', function() {
+$(document).on('turbo:load', function() {
 
   // Track user in Mixpanel when she signs up
   $('#new_user .submit').click(function(e) {
