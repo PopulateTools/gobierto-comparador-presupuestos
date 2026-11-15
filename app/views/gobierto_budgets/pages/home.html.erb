@@ -28,7 +28,7 @@
     <h2 class="section_heading"><%= t('.explore_rankings') %></h2>
 
     <% if places_collection_key == :ine %>
-      <%= form_tag locations_ranking_path(GobiertoBudgets::SearchEngineConfiguration::Year.last,'G','functional','amount'), method: 'GET' do %>
+      <%= form_tag locations_ranking_path(ranking_year,'G','functional','amount'), method: 'GET' do %>
         <%= image_tag('illustrations/analitica.jpg') %>
         <%= hidden_field_tag 'f[aarr]' %>
         <div id="explore_prompt">
@@ -86,7 +86,7 @@
 
       <% ranking_examples_args[places_collection_key].each_with_index do |args, i|
            widget_api_path = gobierto_budgets_api_data_ranking_path(
-             GobiertoBudgets::SearchEngineConfiguration::Year.last,
+             ranking_year,
              *args,
              format: :json,
              only_municipalities: true,

@@ -42,6 +42,39 @@ RSpec.describe "Pages" do
     expect(response.body).to include("/api/data/widget/ranking/deputation_eu/2025/I/economic/amount/391.json")
   end
 
+  context "when the deputations budgets end before the last year" do
+    let(:client) { GobiertoBudgets::SearchEngine.client }
+    let(:index) { GobiertoBudgets::SearchEngineConfiguration::TotalBudget.index_forecast }
+    let(:document_id) { "48000DD000/2023/G/total-budget" }
+
+    before do
+      client.index(
+        index:,
+        id: document_id,
+        refresh: true,
+        body: { organization_id: "48000DD000", year: 2023, kind: "G", type: "total-budget", amount: 1_000_000, amount_per_inhabitant: 1_000 }
+      )
+    end
+
+    after do
+      client.delete(index:, id: document_id, refresh: true)
+    end
+
+    it "links the deputations ranking page to the last year with budgets" do
+      get "/ranking/diputaciones"
+
+      expect(response.body).to include("/api/data/widget/ranking/deputation_eu/2023/I/economic/amount/391.json")
+      expect(response.body).to include("/ranking/diputaciones/2023/G/functional/amount")
+    end
+
+    it "loads the deputations home page rankings of the last year with budgets" do
+      get "/diputaciones"
+
+      expect(response.body).to include("/api/data/widget/ranking/deputation_eu/2023/I/economic/amount/391.json")
+      expect(response.body).not_to include("/api/data/widget/ranking/deputation_eu/2025/")
+    end
+  end
+
   it "redirects the ranking paths without places collection to the municipalities ranking" do
     get "/ranking/2024/G/economic/amount"
 

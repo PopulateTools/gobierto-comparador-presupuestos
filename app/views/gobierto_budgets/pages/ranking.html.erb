@@ -11,8 +11,8 @@
   <p><%= t(".#{places_collection_key}.subtitle") %></p>
 
   <div class="ranking_main_links">
-    <%= link_to t('common.incomes').capitalize, locations_ranking_path(GobiertoBudgets::SearchEngineConfiguration::Year.last, 'I', 'economic', 'amount') %>
-    <%= link_to t('common.expenses').capitalize, locations_ranking_path(GobiertoBudgets::SearchEngineConfiguration::Year.last, 'G', 'functional', 'amount') %>
+    <%= link_to t('common.incomes').capitalize, locations_ranking_path(ranking_year, 'I', 'economic', 'amount') %>
+    <%= link_to t('common.expenses').capitalize, locations_ranking_path(ranking_year, 'G', 'functional', 'amount') %>
   </div>
 
 </header>

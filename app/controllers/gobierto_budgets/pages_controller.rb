@@ -26,7 +26,7 @@ module GobiertoBudgets
     }.freeze
 
     caches_action :home, :ranking, :deputations_ranking, cache_path: ->(c) { { locale: I18n.locale, places_collection: c.send(:places_collection_key) } }
-    helper_method :search_examples, :compare_examples
+    helper_method :search_examples, :compare_examples, :ranking_year
 
     def home
     end
@@ -95,13 +95,17 @@ module GobiertoBudgets
     def ranking_paths(*args_list)
       args_list.map do |args|
         gobierto_budgets_api_data_ranking_path(
-          GobiertoBudgets::SearchEngineConfiguration::Year.last,
+          ranking_year,
           *args,
           format: :json,
           only_municipalities: true,
           places_collection: @places_collection
         )
       end
+    end
+
+    def ranking_year
+      @ranking_year ||= GobiertoBudgets::BudgetTotal.last_year(places_collection_key)
     end
 
     def search_examples
