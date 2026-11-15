@@ -105,7 +105,7 @@ module GobiertoBudgets
     end
 
     def ranking_year
-      @ranking_year ||= GobiertoBudgets::BudgetTotal.last_year(places_collection_key)
+      @ranking_year ||= GobiertoBudgets::BudgetLine.last_year(places_collection_key)
     end
 
     def search_examples
