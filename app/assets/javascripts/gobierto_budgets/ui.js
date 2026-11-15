@@ -52,21 +52,19 @@ $(document).on('turbolinks:load', function() {
 
   var searchOptions = {
     lookup: function (query, done) {
-      $.ajax(placesFile, {
-        complete: function(data) {
-          var suggestions = data.responseJSON.filter(function(result){
-            return (combinePlacesCollectionsInSearches || result.data.type == placesType) && (
-              result.value.indexOf(query) !== -1 ||
-              result.data.slug.indexOf(query) !== -1 ||
-              result.value.toLowerCase().indexOf(query) !== -1
-            )
-          });
-          var result = {
-            suggestions: suggestions
-          };
-          done(result);
-        }
-      })
+      loadPlaces(placesFile).done(function(placesList) {
+        var suggestions = placesList.filter(function(result){
+          return (combinePlacesCollectionsInSearches || result.data.type == placesType) && (
+            result.value.indexOf(query) !== -1 ||
+            result.data.slug.indexOf(query) !== -1 ||
+            result.value.toLowerCase().indexOf(query) !== -1
+          )
+        });
+        var result = {
+          suggestions: suggestions
+        };
+        done(result);
+      });
     },
     onSelect: function(suggestion) {
       var entityPath = entitiesPath[suggestion.data.type]
